@@ -1,0 +1,65 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons left>
+      <button color="light" ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title class="title">
+      SH Delivery
+    </ion-title>
+    <ion-buttons end>
+      <button color="light" ion-button icon-only color="royal" (click)="navcart()" class="header-btn-cart">
+        <ion-icon name="cart"></ion-icon>
+        <ion-badge class="carts" item-right color="danger">{{noOfItems}}</ion-badge>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-grid class="grid">
+    <ion-row>
+      <ion-slides pager initialSlide=0 speed=2000 loop=true dir="rtl">
+        <ion-slide *ngFor="let item of dataSetSlider">
+          <img src={{item.thumb}} class="slider-img">
+        </ion-slide>
+      </ion-slides>
+    </ion-row>
+
+    <ion-row>
+
+      <ion-col col-1>
+
+      </ion-col>
+
+      <ion-col col-10>
+
+        <ion-list no-lines style="margin: 0;">
+          <ion-item *ngFor="let item of dataSetCategory" (click)="navigate(item.id)"
+            [ngStyle]="{'background-color': item.color,'height': '50px', 'margin': '10px 0'}">
+            <div class="{{font}}"></div>
+            <div class="itemText">{{item.name | uppercase}}</div>
+            <ion-icon ios="ios-arrow-forward" md="ios-arrow-forward" item-end></ion-icon>
+          </ion-item>
+        </ion-list>
+
+      </ion-col>
+
+      <ion-col col-1>
+
+      </ion-col>
+
+    </ion-row>
+
+  </ion-grid>
+
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <p style="font-size: 12px; text-align: center;" ion-text color="light">
+      Super Horti Comércio de Verduras e Legumes LTDA</p>
+  </ion-toolbar>
+</ion-footer>

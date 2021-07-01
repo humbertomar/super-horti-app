@@ -1,0 +1,57 @@
+<ion-content padding class="transparent-header" [ngStyle]="{'background-image': 'url(' + backgroundImage +')'}">
+
+    <div padding>
+
+        <form [formGroup]="valForm" (submit)="OnLogin($event, valForm.value)">
+
+            <ion-row>
+                <ion-col>
+                    <ion-list inset class="no-border">
+
+                        <img class="logo" src="assets/img/logo-2.png" />
+
+                        <ion-item>
+                            <ion-input class="form-control" id="exampleInputEmail1" type="email" name="email"
+                                placeholder="Digite seu e-mail" autocomplete="off" formControlName="email" required>
+                            </ion-input>
+                        </ion-item>
+
+                        <ion-item>
+                            <ion-input id="exampleInputPassword1" type="password" name="password"
+                                placeholder="Digite sua senha" formControlName="password" required></ion-input>
+                        </ion-item>
+
+                    </ion-list>
+                </ion-col>
+            </ion-row>
+
+            <ion-row>
+                <ion-col>
+                    <button class="login-btn" type="submit" [disabled]="!valForm.valid" ion-button>ENTRAR</button>
+                </ion-col>
+            </ion-row>
+
+        </form>
+
+        <br>
+
+        <ion-row>
+            <ion-col col-12>
+                <button class="login-btn" type="submit" (click)="onClickForgotPassword()" ion-button>ESQUECI A SENHA</button>
+            </ion-col>
+        </ion-row>
+
+        <br>
+
+        <ion-row>
+            <ion-col col-12 text-center>
+                <button (click)="Register()" ion-button small color="energy">CADASTRAR</button>
+            </ion-col>
+            <ion-col col-12 text-center>
+                <button (click)="back()" ion-button small color="dark">VOLTAR</button>
+            </ion-col>
+        </ion-row>
+
+    </div>
+
+</ion-content>

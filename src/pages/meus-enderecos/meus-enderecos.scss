@@ -1,0 +1,120 @@
+page-meus-enderecos {
+
+  ion-content {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-color: transparent;
+  }
+
+  .select-address {
+    .col {
+      padding: 0 15px;
+      border-bottom: 1px solid;
+      border-color: rgba(0, 0, 0, 0.1);
+      .show-address {
+        font-size: 1.5rem;
+        margin: 10px 0;
+      }
+    }
+  }
+  .radio .radio-checked {
+    border-color: $primary !important;
+  }
+  .radio .radio-inner {
+    background-color: $primary !important;
+  }
+  .radio-ios .radio-checked .radio-inner {
+    background-color: transparent !important;
+    border-color: $primary;
+  }
+  .radio-md .radio-icon {
+    left: 5px !important;
+  }
+  
+  .booking-block {
+    margin: 1em 0;
+
+    .col {
+      padding: 0 !important;
+    }
+    .border {
+      border-right: 1px solid;
+      border-color: rgba(0, 0, 0, 0.1);
+    }
+    .booking-opt {
+      padding: 0;
+      background-color: $dark;
+
+      .label {
+        margin-left: 8px;
+        color: $white;
+      }
+      .item-inner {
+        border: 0;
+      }
+    }
+    .radio .radio-checked {
+      display: none;
+    }
+    .radio .radio-inner {
+      background-color: $primary !important;
+    }
+    .radio .radio-icon {
+      display: none;
+    }
+    .item-radio-checked {
+      background-color: $primary !important;
+    }
+  }
+
+  .item {
+    padding-left: 0;
+    .label {
+      margin: 13px 8px 13px 0;
+      padding-left: 16px;
+      font-size: 1.8rem;
+    }
+    ion-icon {
+      font-size: 1em;
+      float: right;
+      font-weight: 700;
+    }
+  }
+
+  .content {
+        background-image: url(../assets/img/bg-2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      
+      .img {
+        display: block;
+        margin: 6px auto;
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+        border: 3px solid;
+      }
+      .name {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-top: -23px;
+        color: $primary !important;
+      }
+      
+      .login {
+        background: url("../assets/img/bg.jpg") no-repeat center;
+        background-size: cover;
+        color: $white;
+        .logo {
+          width: 86px;
+          display: block;
+          margin: 0 auto;
+          margin-top: 4em;
+          padding-bottom: 2em;
+        }
+      }
+      
+}

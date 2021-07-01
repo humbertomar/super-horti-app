@@ -1,0 +1,46 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Sobre Nós</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+    <img class="displayed" src="assets/img/about_us.jpg">
+
+    <div class="wrapper">
+        <h4 class="heading">Quem somos</h4>
+        <p class="details">
+            Somos mais que uma empresa, somos uma família pronta para atender vocês!<br>
+            Nossos produtos são frescos, com qualidade e procedência garantidas.<br>
+            Do Campo à sua Mesa da melhor forma possível.
+        </p>
+
+        <h4 class="heading">
+            Entrar em contato
+        </h4>
+
+        <ion-card>
+            <ion-card-content (click)="callUs()">
+                <ion-icon name="call"></ion-icon> &nbsp; Ligue para nós
+            </ion-card-content>
+            <ion-card-content (click)="whatsappUs()">
+                <ion-icon name="logo-whatsapp"></ion-icon> &nbsp; Mande uma mensagem para nós
+            </ion-card-content>
+            <!--<ion-card-content (click)="contact()">
+                <ion-icon name="mail"></ion-icon> &nbsp; Envie-nos um e-mail
+            </ion-card-content>-->
+        </ion-card>
+    </div>
+
+</ion-content>
+
+<ion-footer class="ion-no-border">
+    <ion-toolbar>
+        <p style="font-size: 12px; text-align: center;" ion-text color="light">
+            Super Horti Comércio de Verduras e Legumes LTDA</p>
+    </ion-toolbar>
+</ion-footer>

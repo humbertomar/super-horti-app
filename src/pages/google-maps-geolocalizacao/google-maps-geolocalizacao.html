@@ -1,0 +1,32 @@
+<ion-content padding class="transparent-header" [ngStyle]="{'background-image': 'url(' + backgroundImage +')'}">
+
+  <ion-fab top right>
+    <button ion-fab color="verde-escuro" (click)="cepIn(0)">
+      <ion-icon name="md-close"></ion-icon>
+    </button>
+  </ion-fab>
+
+  <ion-row>
+    <ion-col col-12 text-center>
+      <button (click)="tryGeolocation()" ion-button small color="energy">Pegar Minha Localização Atual</button>
+    </ion-col>
+  </ion-row>
+
+  <ion-searchbar [(ngModel)]="autocomplete.input" (ionInput)="updateSearchResults()" placeholder="Digite seu endereço">
+  </ion-searchbar>
+
+  <ion-list [hidden]="autocompleteItems.length == 0">
+    <ion-item *ngFor="let item of autocompleteItems" tappable (click)="selectSearchResult(item)">
+      {{ item.description }}
+    </ion-item>
+  </ion-list>
+
+  <div id='map'></div>
+
+  <ion-row>
+    <ion-col>
+      <button class="login-btn" (click)="cepIn(1)" type="submit" ion-button>ENVIAR</button>
+    </ion-col>
+  </ion-row>
+
+</ion-content>

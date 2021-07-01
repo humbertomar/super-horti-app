@@ -1,0 +1,83 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title class="title">Detalhe do Produto</ion-title>
+        <ion-buttons end>
+            <button ion-button icon-only color="royal" (click)="navcart()" class="header-btn-cart">
+                <ion-icon name="cart"></ion-icon>
+                <ion-badge class="carts" item-right color="danger">{{noOfItems}}</ion-badge>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="item-page">
+    <ion-row class="productImage">
+        <img class="displayed" *ngIf="menuItems.image != 'Nenhum arquivo foi selecionado.'" src='https://superhorti.com.br/appAdmin/{{menuItems.image}}' alt={{menuItems.name}} />
+        <img class="displayed" *ngIf="menuItems.image == 'Nenhum arquivo foi selecionado.'" src='https://superhorti.com.br/ws/assets/imgs/logo-sh.png' alt={{menuItems.name}} />
+    </ion-row>
+
+    <div class="card-title" *ngFor="let data of Cart" color="primary">
+        <span *ngIf="data.item.itemId == menuItems.id">Este Produto já está no seu carrinho!</span>
+    </div>
+
+    <ion-row>
+        <ion-col col-6>
+            <div class="center count">
+                <span class="item-count" (click)="removeQuantity()">
+                    -
+                </span>
+                <span class="item-count show-count">
+                    {{count}}
+                </span>
+                <span class="item-count" (click)="addQuantity()">
+                    +
+                </span>
+            </div>
+        </ion-col>
+
+        <ion-col col-6>
+            <div class="center">
+                <a (click)="addToCart()" ion-button round icon-left class="btn-add-to-cart">
+                    <ion-icon name="md-add-circle"></ion-icon>
+                    &nbsp; ADICIONAR
+                </a>
+            </div>
+        </ion-col>
+    </ion-row>
+        
+    <ion-list-header class="size-list-header" text-center>
+        <p text-wrap class="fontsize01"><strong>{{ menuItems.name }}</strong></p>
+        <p text-wrap class="fontsize01">Preço {{ menuItems.price | currency:'BRL':true:'1.2-2' }}</p>
+        <p text-wrap class="fontsize01"><strong>Descrição:</strong> {{ menuItems.description }}</p>
+        <p text-wrap class="fontsize02">Adicionar ao Carrinho</p>
+        <p text-wrap class="fontsize02"><strong>{{count}} X {{ menuItems.name }}</strong></p>
+        <p text-wrap class="fontsize01"><strong>Total {{ count * menuItems.price | currency:'BRL':true:'1.2-2' }}</strong></p>
+    </ion-list-header>   
+
+    <ion-row class="button-fixed">
+        <ion-col col-6>
+            <div class="center">
+                <a (click)="navcart()" ion-button round icon-left class="btn-add-to-cart">
+                    <ion-icon name="cart"></ion-icon>
+                    &nbsp; CHECKOUT
+                </a>
+            </div>
+        </ion-col>
+        <ion-col col-6>
+            <div class="center">
+                <a (click)="home()" ion-button round icon-left class="btn-add-to-cart">
+                    <ion-icon name="basket"></ion-icon>
+                    &nbsp; COMPRAR +
+                </a>
+            </div>
+        </ion-col>
+    </ion-row>
+
+</ion-content>
+
+<ion-footer class="ion-no-border">
+    <ion-toolbar>
+        <p style="font-size: 12px; text-align: center;" ion-text color="light">
+            Super Horti Comércio de Verduras e Legumes LTDA</p>
+    </ion-toolbar>
+</ion-footer>

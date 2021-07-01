@@ -1,0 +1,92 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+      <ion-buttons left>
+          <button color="light" ion-button menuToggle>
+              <ion-icon name="menu"></ion-icon>
+          </button>
+      </ion-buttons>
+      <ion-title class="title">
+          Configurações
+      </ion-title>
+      <ion-buttons end>
+          <button color="light" ion-button icon-only color="royal" (click)="navcart()" class="header-btn-cart">
+              <ion-icon name="cart"></ion-icon>
+              <ion-badge class="carts" item-right color="danger">{{noOfItems}}</ion-badge>
+          </button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-grid>
+  
+    <ion-fab right edge>
+      <button ion-fab mini (click)="selectAddress()"><ion-icon name="add"></ion-icon></button>
+    </ion-fab>
+  
+    <div class="login">
+      <ion-row>
+        <img class="img" [src]="url">
+        <br>
+      </ion-row>
+      <br>
+      <p class="name">Meus Endereços</p>
+    </div>
+  
+    <ion-row>
+  
+      <ion-col col-1>
+  
+      </ion-col>
+  
+      <ion-col col-10>
+  
+        <ion-row>
+          <ion-col col-12>
+          
+            <ion-list radio-group class="address-radio" [(ngModel)]="address.$key">
+              <div *ngFor="let address of addressList">
+                <ion-item>
+                  <ion-label>
+                    <p class="show-address">{{address.nome}} </p>
+                    <p class="show-address">{{address.endereco}}<span *ngIf="address.numero">,
+                        {{address.numero}}</span></p>
+            
+                    <p *ngIf="address.complemento">{{address.complemento}}</p>
+                    <p class="show-address">{{address.cidade}} - {{address.estado}}</p>
+            
+                    <p class="show-address">{{address.cep}}</p>
+                    <p class="show-address">{{address.contato}}</p>
+                    
+                  </ion-label>
+                  <ion-radio (ionSelect)="selectAddress2(address.$key, address)" [value]="address.$key"></ion-radio>
+                </ion-item>
+                <button ion-button (click)="selectAddress(address)">
+                  <ion-icon ios="ios-trash" md="md-trash"></ion-icon>&nbsp;&nbsp;Excluir
+                </button>
+              </div>
+              
+            </ion-list>
+          
+          </ion-col>
+        </ion-row>
+  
+      </ion-col>
+  
+      <ion-col col-1>
+  
+      </ion-col>
+  
+    </ion-row>
+  
+  </ion-grid>
+
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+      <p style="font-size: 12px; text-align: center;" ion-text color="light">
+          Super Horti Comércio de Verduras e Legumes LTDA</p>
+  </ion-toolbar>
+</ion-footer>

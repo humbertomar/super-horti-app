@@ -1,0 +1,48 @@
+<ion-header>
+    <ion-navbar color="primary">
+        <ion-title>Meus Pedidos</ion-title>
+        <ion-buttons end>
+            <button ion-button icon-only color="royal" (click)="navcart()">
+                <ion-icon name="cart"></ion-icon>
+                <ion-badge class="carts" item-right color="danger">{{noOfItems}}</ion-badge>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-list class="orders-list">
+        <ion-card class="orders-item" *ngFor="let order of ordersDetails; let i =index;">
+            <ion-row>
+                <ion-col col-1>
+
+                </ion-col>
+                <ion-col col-5>
+                    <img *ngIf="order.image != 'Nenhum arquivo foi selecionado.'"
+                        src='https://superhorti.com.br/appAdmin/{{order.image}}' alt="" />
+                    <img *ngIf="order.image == 'Nenhum arquivo foi selecionado.'"
+                        src='https://superhorti.com.br/ws/assets/imgs/logo-sh.png' alt="" />
+                </ion-col>
+                <ion-col col-5>
+                    <p class="item-name">
+                        <strong>{{order.name}}</strong>
+                    </p>
+                    <p class="item-price">Preço: <strong>{{order.price | currency:'BRL':true:'1.2-2'}}</strong></p>
+                    <p class="date">Qtd: <strong>{{order.itemQunatity}}</strong></p>
+                    <p class="item-price">Total: <strong>{{order.itemTotalPrice |
+                            currency:'BRL':true:'1.2-2'}}</strong></p>
+                </ion-col>
+                <ion-col col-1>
+
+                </ion-col>
+            </ion-row>
+        </ion-card>
+    </ion-list>
+</ion-content>
+
+<ion-footer class="ion-no-border">
+    <ion-toolbar>
+        <p style="font-size: 12px; text-align: center;" ion-text color="light">
+            Super Horti Comércio de Verduras e Legumes LTDA</p>
+    </ion-toolbar>
+</ion-footer>

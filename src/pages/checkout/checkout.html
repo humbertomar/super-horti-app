@@ -1,0 +1,68 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title class="title">Opções de Pagamento
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+    <ion-row class="amount-block">
+        <ion-col col-6>
+            <p class="total"> Total do Pedido
+                <span class="currency"> {{payTotal | currency:'BRL':true:'1.2-2'}}
+                </span>
+            </p>
+        </ion-col>
+    </ion-row>
+    <ion-list radio-group class="radio-list">
+        
+        <p class="card-title">Escolha uma forma de pagamento</p>
+
+        <ion-list radio-group>
+            <ion-row class="card-type">
+                <ion-col col-12>
+                    <ion-item class="radio-item">
+                        <ion-label>Na Entrega Dinheiro</ion-label>
+                        <ion-radio item-left value="dinheiro" (ionSelect)="choosePaymentType('dinheiro')"></ion-radio>
+                    </ion-item>
+                    
+                    <ion-item class="radio-item" *ngIf="forma_pagamento.tipo == 'dinheiro'">
+                        <ion-input type="text" name="troco" [(ngModel)]="forma_pagamento.troco" placeholder="Troco para" [brmasker]="{money: true}"></ion-input>
+                    </ion-item>
+                    
+                    <ion-item class="radio-item">
+                        <ion-label>Na Entrega Cartão Crédito</ion-label>
+                        <ion-radio item-left value="cartao_credito" (ionSelect)="choosePaymentType('cartao_credito')"></ion-radio>
+                    </ion-item>
+                    <ion-item class="radio-item">
+                        <ion-label>Na Entrega Cartão Débito</ion-label>
+                        <ion-radio item-left value="cartao_debito" (ionSelect)="choosePaymentType('cartao_debito')"></ion-radio>
+                    </ion-item>
+                    <ion-item class="radio-item">
+                        <ion-label>Transferência Bancária</ion-label>
+                        <ion-radio item-left value="transferencia_bancaria" (ionSelect)="choosePaymentType('transferencia_bancaria')"></ion-radio>
+                    </ion-item>
+
+                    <ion-item class="radio-item">
+                        <ion-input type="text" name="observacoes" [(ngModel)]="forma_pagamento.observacoes" placeholder="Observações" ></ion-input>
+                    </ion-item>
+                </ion-col>
+            </ion-row>
+        </ion-list>
+      
+        <div class="btn-wrapper">
+            <button ion-button full class="btn-lg" type="button" [disabled]="disableButton == false" (click)="onCheckOut()">Concluir o pedido
+            </button>
+        </div>
+        
+    </ion-list>
+
+</ion-content>
+
+<ion-footer class="ion-no-border">
+    <ion-toolbar>
+        <p style="font-size: 12px; text-align: center;" ion-text color="light">
+            Super Horti Comércio de Verduras e Legumes LTDA</p>
+    </ion-toolbar>
+</ion-footer>

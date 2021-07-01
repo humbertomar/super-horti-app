@@ -1,0 +1,230 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Meu Carrinho</ion-title>
+        <ion-buttons end>
+            <button ion-button icon-only color="royal" class="header-btn">
+                <ion-icon name="cart"></ion-icon>
+                <div *ngIf="noOfItems > 0">
+                    <ion-badge class="carts" item-right color="danger"><!--{{noOfItems}}-->{{totalItems}}</ion-badge>
+                </div>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+<ion-content [ngClass]="{bg:!isCart()}">
+
+    <ion-grid>
+
+        <div *ngIf="!isCart()">
+            <ion-row>
+                <ion-icon class="empty-cart" name="cart"></ion-icon>
+            </ion-row>
+            <h4 class="card-title">Seu carrinho está vazio!</h4>
+            <button ion-button class="empty-btn" (click)="gotoHome()">Adiconar Item</button>
+        </div>
+        <div *ngIf="isCart()">
+            <ion-list class="cart-list" *ngFor="let data of Cart">
+
+                <ion-item class="cart-item">
+
+                    <ion-row>
+                        <ion-col col-12>
+
+                            <ion-row>
+
+                                <ion-col col-6>
+                                    <div class="left">
+                                        <img class="displayed"
+                                            *ngIf="data.item.image != 'Nenhum arquivo foi selecionado.'"
+                                            src='https://superhorti.com.br/appAdmin/{{data.item.image}}' alt="" />
+                                        <img class="displayed"
+                                            *ngIf="data.item.image == 'Nenhum arquivo foi selecionado.'"
+                                            src='https://superhorti.com.br/ws/assets/imgs/logo-sh.png' alt="" />
+                                    </div>
+                                </ion-col>
+
+                                <ion-col col-6>
+                                    <div class="left">
+                                        <p class="item-name" text-wrap>{{data.item.name}}</p>
+
+                                        <p class="item-detail">Preço:
+                                            <span class="item-price">
+                                                {{data.item.price | currency:'BRL':true:'1.2-2'}}
+                                            </span>
+                                        </p>
+
+                                        <p class="item-detail" text-wrap>Quantidade</p>
+
+                                        <ion-row class="counter">
+
+                                            <ion-col col-10>
+
+                                                <div class="count">
+                                                    <span class="item-count" (click)="remove(data)">
+                                                        -
+                                                    </span>
+                                                    <span class="item-count show-count">
+                                                        {{data.item.itemQunatity}}
+                                                    </span>
+                                                    <span class="item-count" (click)="add(data)">
+                                                        +
+                                                    </span>
+                                                </div>
+
+                                            </ion-col>
+
+                                            <ion-col col-2>
+                                                <ion-icon name="trash" (click)="deleteItem(data)"></ion-icon>
+                                            </ion-col>
+
+                                        </ion-row>
+
+                                        <p class="item-detail" text-wrap>Total: {{ data.item.itemQunatity *
+                                            data.item.price | currency:'BRL':true:'1.2-2' }}</p>
+
+                                    </div>
+                                </ion-col>
+                            </ion-row>
+
+                        </ion-col>
+                    </ion-row>
+                </ion-item>
+            </ion-list>
+
+            <ion-row class="price-details">
+                <ion-col class="calculate" col-12>
+                    <p class="cart-total"><strong>Total de itens do pedido</strong>
+                        <span>{{ totalItems }}</span>
+                    </p>
+                    <p class="bill-detail">Subtotal do pedido
+                        <span>{{subTotal | currency:'BRL':true:'1.2-2'}}</span>
+                    </p>
+                    <p class="bill-detail right">Taxa de entrega
+                        <span>{{frete | currency:'BRL':true:'1.2-2'}}</span>
+                    </p>
+
+                    <div class="center" *ngIf="botaoRecalcularFrete == true">
+                        <button ion-button color="danger" small round (click)="insertCep()">
+                            <p style="font-size: 12px; color: white;">Recalcule o frete!</p>
+                        </button>
+                    </div>
+
+                    <div *ngIf="cep == null && uid == null" class="center">
+                        <button ion-button color="danger" small round (click)="insertCep()">
+                            <p style="font-size: 12px; color: white;">Calcule o frete!</p>
+                        </button>
+                    </div>
+
+                    <div *ngIf="cep == null && uid != null" class="center">
+                        <button ion-button color="danger" small round (click)="insertCep()">
+                            <p style="font-size: 12px; color: white;">Calcule o frete!</p>
+                        </button>
+                    </div>
+
+                    <ion-item *ngIf="address.$key">
+                        <ion-label>Local de Entrega</ion-label>
+                        <ion-select [(ngModel)]="address.$key" (ionChange)="addressUser($event);">
+                            <ion-option *ngFor="let address of addressList" value="{{address.$key}}">{{address.endereco}}</ion-option>
+                        </ion-select>
+                    </ion-item>
+                    
+                    <p class="center" style="font-weight: bold; font-size: 14px; color: red;" *ngIf="cep != null">CEP:
+                        {{ cep }}</p>
+
+                    <div class="cart-total">
+                        <strong>Total do pedido</strong>
+                        <span class="price">{{GrandTotal | currency:'BRL':true:'1.2-2'}}</span>
+                    </div>
+
+                    <hr>
+
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col col-12>
+                    <div class="center">
+
+                        <div *ngIf="dataEntregaAgendado == undefined">
+                            <ion-segment [(ngModel)]="pedidoAgendado" mode="md" color="primary"
+                                (ionChange)="segmentChanged($event)">
+                                <ion-segment-button value="0">
+                                    <p>Entrega Normal</p>
+                                </ion-segment-button>
+                                <ion-segment-button value="1">
+                                    <span *ngIf="dataEntregaAgendado === undefined"></span>
+                                    <p (click)="openCalendar()">{{dataEntregaAgendado}} Entrega Agendada</p>
+                                </ion-segment-button>
+                            </ion-segment>
+                        </div>
+
+                        <div *ngIf="dataEntregaAgendado != undefined">
+                            <ion-segment [(ngModel)]="pedidoAgendado" mode="md" color="primary"
+                                (ionChange)="segmentChanged($event)">
+                                <ion-segment-button value="0">
+                                    <p>Entrega Normal</p>
+                                </ion-segment-button>
+                                <ion-segment-button value="1">
+                                    <p>Entrega Agendada</p>
+                                </ion-segment-button>
+                            </ion-segment>
+                        </div>
+
+                        <strong *ngIf="pedidoAgendado !=1 ">
+                            <p style="font-weight: bold; font-size: 14px; color: red;">{{dataEntrega | date:
+                                'dd/MM/yyyy'}} - {{diaSemana | uppercase}}.</p>
+                        </strong>
+
+                        <strong *ngIf="pedidoAgendado == 1" (click)="openCalendar()">
+                            <p style="font-weight: bold; font-size: 14px; color: red;">{{dataEntregaAgendado | date:
+                                'dd/MM/yyyy'}} - {{diaSemanaAgendado | uppercase}}.</p>
+                        </strong>
+
+                        <button ion-button round color="verde-escuro" *ngIf="bloquear_botao != true" (click)="nav()">
+                            <ion-icon name="md-thumbs-up"></ion-icon>
+                            &nbsp; Finalizar Compra
+                        </button>
+
+                        <button ion-button round color="danger" *ngIf="bloquear_botao == true" (click)="nav3()">
+                            <p style="font-size: 12px; color: #ffffff;">Atualize o aplicativo do Super Horti!</p>
+                        </button>
+                    </div>
+                </ion-col>
+                <ion-col col-12>
+                    <div class="center">
+                        <button (click)="home()" ion-button round icon-left class="btn-add-to-cart">
+                            <ion-icon name="basket"></ion-icon>
+                            &nbsp; Continuar Comprando
+                        </button>
+                    </div>
+                </ion-col>
+            </ion-row>
+        </div>
+
+    </ion-grid>
+
+    <ion-card class="card-background-page">
+        <ion-card-content>
+            <p style="font-size: 12px; text-align: center;" ion-text color="light"><strong>ATENÇÃO</strong></p>
+            <p style="font-size: 12px; text-align: center;" ion-text color="light">Os pedidos feitos na
+                <strong>Sexta</strong>, <strong>Sábado</strong> e <strong>Domingo</strong> serão entregues
+                na Segunda.
+            </p>
+
+            <p style="font-size: 12px; text-align: center;" ion-text color="light">Os pedidos feitos na
+                <strong>Terça</strong> serão entregue na Quinta.
+            </p>
+
+            <p style="font-size: 12px; text-align: center;" ion-text color="light">Pedidos devem ser feitos até às 20:00
+                horas, para serem entregues no próximo dia.</p>
+        </ion-card-content>
+    </ion-card>
+
+</ion-content>
+
+<ion-footer class="ion-no-border">
+    <ion-toolbar>
+        <p style="font-size: 12px; text-align: center;" ion-text color="light">
+            Super Horti Comércio de Verduras e Legumes LTDA</p>
+    </ion-toolbar>
+</ion-footer>

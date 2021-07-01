@@ -1,0 +1,34 @@
+<ion-content padding class="transparent-header" [ngStyle]="{'background-image': 'url(' + backgroundImage +')'}">
+
+  <div padding>
+
+    <ion-fab top right>
+      <button ion-fab color="verde-escuro" (click)="cepIn(0)">
+        <ion-icon name="md-close"></ion-icon>
+      </button>
+    </ion-fab>
+
+    <ion-row>
+      <ion-col>
+        <ion-list inset class="no-border">
+
+          <img class="logo" src="assets/img/logo-2.png" />
+
+          <ion-item>
+            <ion-input type="tel" placeholder="Digite seu CEP" [brmasker]="{mask:'00.000-000', len:10}" #cep>
+            </ion-input>
+          </ion-item>
+
+        </ion-list>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <button class="login-btn" (click)="cepIn(cep.value)" type="submit" ion-button>ENVIAR</button>
+      </ion-col>
+    </ion-row>
+
+  </div>
+
+</ion-content>

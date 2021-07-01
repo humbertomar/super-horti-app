@@ -1,0 +1,104 @@
+<ion-header class="ion-no-border">
+    <ion-toolbar>
+        <ion-buttons left>
+            <button color="light" ion-button menuToggle>
+                <ion-icon name="menu"></ion-icon>
+            </button>
+        </ion-buttons>
+        <ion-title class="title">
+            Configurações
+        </ion-title>
+        <ion-buttons end>
+
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-grid>
+
+        <div class="login">
+            <ion-row>
+                <img class="img" [src]="url">
+                <br>
+            </ion-row>
+            <!--<ion-row>
+                <input type="file" name="file" id="file" class="inputfile" (change)="readUrl($event)">
+                <label for="file" class="upload">
+                    <ion-icon ios="ios-cloud-upload" md="md-cloud-upload"></ion-icon>
+                </label>
+            </ion-row>-->
+            <br>
+            <p class="name">{{user.name}}</p>
+        </div>
+
+        <ion-row>
+
+            <ion-col col-1>
+
+            </ion-col>
+
+            <ion-col col-10>
+
+                <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+                    
+                    <ion-list>
+                        <ion-item *ngIf="user.notification == true">
+                            <ion-label primary>Notificações</ion-label>
+                            <ion-toggle primary checked="true" name="name" id="name" [(ngModel)]="user.notification">
+                            </ion-toggle>
+
+                        </ion-item>
+                        <ion-item *ngIf="user.notification == false">
+                            <ion-label primary>Notificações</ion-label>
+                            <ion-toggle primary checked="false" name="name" id="name" [(ngModel)]="user.notification">
+                            </ion-toggle>
+
+                        </ion-item>
+                        <ion-item>
+                            <ion-label>Nome</ion-label>
+                            <ion-input type="text" name="name" id="name" placeholder="Nome" [(ngModel)]="user.name"
+                                required>
+                            </ion-input>
+                        </ion-item>
+                        <ion-item>
+                            <ion-label>E-mail</ion-label>
+                            <ion-input type="email" name="email" id="email" placeholder="E-mail"
+                                [(ngModel)]="user.email" readonly></ion-input>
+                        </ion-item>
+                        <ion-item>
+                            <ion-label>Celular</ion-label>
+                            <ion-input type="text" name="mobileNo" id="mobileNo" placeholder="Celular"
+                                [(ngModel)]="user.mobileNo" required></ion-input>
+                        </ion-item>
+                    </ion-list>
+                    <ion-row>
+                        <ion-col col-12>
+                            <div align="center">
+                                <button ion-button round type="submit" [disabled]="!f.valid" small>
+                                    Salvar Dados
+                                </button>
+                            </div>
+                        </ion-col>
+                    </ion-row>
+                </form>
+
+            </ion-col>
+
+            <ion-col col-1>
+
+            </ion-col>
+
+        </ion-row>
+
+    </ion-grid>
+
+</ion-content>
+
+<ion-footer class="ion-no-border">
+    <ion-toolbar>
+        <p style="font-size: 12px; text-align: center;" ion-text color="light">
+            Super Horti Comércio de Verduras e Legumes LTDA</p>
+    </ion-toolbar>
+</ion-footer>

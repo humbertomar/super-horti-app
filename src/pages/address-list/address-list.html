@@ -1,0 +1,67 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title class="title">Confirmar o Pedido <!--Lista de Endereços-->
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding class="transparent-header" [ngStyle]="{'background-image': 'url(' + backgroundImage +')'}">
+
+    <div padding>
+
+        <ion-row class="amount-block">
+            <ion-col col-6>
+                <p class="total"> Total do Pedido
+                    <span class="currency"> {{payTotal | currency:'BRL':true:'1.2-2'}}
+                    </span>
+                </p>
+            </ion-col>
+            <ion-col col-6>
+
+            </ion-col>
+            <div *ngIf="checked == true">
+                <p class="total"> Montante a ser pago:
+                    <span class="currency"> {{orderDetails.grandTotal | currency:'BRL':true:'1.2-2'}}</span>
+                </p>
+            </div>
+        </ion-row>
+
+        <ion-row class="amount-block" (click)="addressOK()">
+            <ion-col col-12>
+                <p class="total"> Endereço para entrega<br><br>
+                    <span class="currency2">{{addressList.nome}} </span><br>
+                    <span class="currency2">{{addressList.endereco}}<span *ngIf="addressList.numero">,
+                            {{addressList.numero}}</span></span><br>
+        
+                    <span class="currency2" *ngIf="addressList.complemento != 'undefined'">{{addressList.complemento}}<br></span>
+
+                    <span class="currency2">{{addressList.bairro}}</span><br>
+
+                    <span class="currency2">{{addressList.cidade}} - {{addressList.estado}}</span><br>
+        
+                    <span class="currency2">{{addressList.cep}}</span><br>
+                    <span class="currency2">{{addressList.contato}}</span><br>
+                    <br>
+        
+                    <span text-wrap style="font-weight: bold; font-size: 14px; color: red;">Entrega em:<br>
+                        {{dataPedidoAgendado | date: 'dd/MM/yyyy'}} - {{diaSemana | uppercase}}</span><br><br>
+                    <span class="currency">Valor do frete: {{addressList.frete |
+                        currency:'BRL':true:'1.2-2'}}</span><br>
+                </p>
+            </ion-col>
+        </ion-row>
+
+        <button ion-button block class="continue-btn" (click)="checkOut()">Continue &nbsp;
+            <ion-icon name="arrow-forward"></ion-icon>
+        </button>
+
+    </div>
+
+</ion-content>
+
+<ion-footer class="ion-no-border">
+    <ion-toolbar>
+        <p style="font-size: 12px; text-align: center;" ion-text color="light">
+            Super Horti Comércio de Verduras e Legumes LTDA</p>
+    </ion-toolbar>
+</ion-footer>

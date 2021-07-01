@@ -1,0 +1,41 @@
+<ion-header class="ion-no-border">
+    <ion-toolbar>
+      <ion-buttons left>
+        <button color="light" ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+      </ion-buttons>
+      <ion-title class="title">
+        SH Delivery
+      </ion-title>
+      <ion-buttons end>
+        
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content class="page-content">
+    <ion-row>
+        <ion-col col-12>
+            <div class="thanks">
+                <h2>Obrigado pela preferência!</h2>
+                <p>Seu pedido será entregue em breve!</p>
+                <p>Esse é o número do seu Pedido: {{ numPedido }}</p>
+            </div>
+        </ion-col>
+    </ion-row>
+    
+    <button ion-button class="continue-btn" (click)="home()" color="verde-escuro">Comprar mais!</button>
+
+    <br />
+    
+    <button ion-button class="continue-btn" (click)="onClick()" color="verde-escuro">Envie aqui o número do<br/>seu pedido e a sua localização!</button>
+
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <p style="font-size: 12px; text-align: center;" ion-text color="light">
+      Super Horti Comércio de Verduras e Legumes LTDA</p>
+  </ion-toolbar>
+</ion-footer>

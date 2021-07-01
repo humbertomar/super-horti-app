@@ -1,0 +1,97 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+      <ion-buttons left>
+          <button color="light" ion-button menuToggle>
+              <ion-icon name="menu"></ion-icon>
+          </button>
+      </ion-buttons>
+      <ion-title class="title">
+          Meus Pedidos Agendados
+      </ion-title>
+      <ion-buttons end>
+          <button color="light" ion-button icon-only color="royal" (click)="navcart()" class="header-btn-cart">
+              <ion-icon name="cart"></ion-icon>
+              <ion-badge class="carts" item-right color="danger">{{noOfItems}}</ion-badge>
+          </button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <div *ngIf="!isOrders()">
+      <div class="empty-list">
+          <ion-icon class="empty-cart" name="timer" item-left></ion-icon>
+          <p>Sem pedidos agendados!</p>
+      </div>
+
+  </div>
+  <div *ngFor="let order of ordersDetails">
+      <ion-card class="orders-item">
+          <h5 align="center">Pedido nº: <strong>{{order.orderId}}</strong></h5>
+          <h6 align="center" class="item-name">Data do Pedido: <strong>{{order.createdAt | date: 'dd/MM/yyyy H:mm' }}</strong></h6>
+          <hr/>
+          <ion-row>
+              <ion-col col-6 no-padding>
+                  <p class="item-name">Sub Total: <strong>{{order.subTotal | currency:'BRL':true:'1.2-2'}}</strong></p>
+              </ion-col>
+              <ion-col col-6 no-padding>
+                  <p class="item-name">Taxa Entrega: <strong>{{order.tax | currency:'BRL':true:'1.2-2'}}</strong></p>
+              </ion-col>
+          </ion-row>
+          <ion-row>
+              <ion-col col-6 no-padding>
+                  <p class="item-name">Valor Total: <strong>{{order.grandTotal | currency:'BRL':true:'1.2-2'}}</strong></p>
+              </ion-col>
+              <ion-col col-6 no-padding>
+                <p class="item-name">Data de Entrega: <strong>{{order.data_entrega | date: 'dd/MM/yyyy'}}</strong></p>
+              </ion-col>
+
+              <ion-col col-12 no-padding *ngIf="order.data_cancel_entrega == null">
+                <p class="item-name"><strong>{{funcCalculaDias(order.data_entrega)}}</strong></p>
+              </ion-col>
+
+              <ion-col col-12 no-padding>
+                <span *ngIf="order.data_cancel_entrega != null">
+                    <button ion-button color="energy" small>
+                        Cancelado em {{order.data_cancel_entrega  | date: 'dd/MM/yyyy H:mm' }} </button>
+                </span>
+                <span *ngIf="order.data_cancel_entrega == null">
+                    <button *ngIf="ativarBotao(order.data_entrega) == 1" ion-button color="danger" (click)="cancelarPedido(order.pedido_id)" small>
+                        Cancelar Agendamento </button>
+                </span>
+              </ion-col>
+          </ion-row>
+          <ion-row>
+              <ion-col col-12 no-padding>
+                  <p class="status">Forma de Pagamento: <strong>
+                      <span *ngIf="order.tipo_pagamento == 'cartao_credito'">Cartão de Crédito</span>
+                      <span *ngIf="order.tipo_pagamento == 'cartao_debito'">Cartão de Débito</span>
+                      <span *ngIf="order.tipo_pagamento == 'transferencia_bancaria'">Transferência Bancária</span>
+                      <span *ngIf="order.tipo_pagamento == 'dinheiro'">Dinheiro</span>
+                  </strong>
+              </ion-col>
+              <ion-col col-12 no-padding>
+                  <p class="status">Pagamento: <strong><span *ngIf="order.status_pagamento  == 1">Pendente</span><span *ngIf="order.status_pagamento  == 2">Pago</span><span *ngIf="order.status_pagamento  == 3">Cancelado</span></strong></p>
+              </ion-col>
+          </ion-row>
+          <ion-row>
+              <ion-col col-6 no-padding>
+                  <p class="status">Pedido: <strong><span *ngIf="order.status_pedido == 1">Pendente</span><span *ngIf="order.status_pedido == 2">Entregue</span><span *ngIf="order.status_pedido == 3">Cancelado</span></strong></p>
+              </ion-col>
+              <ion-col col-6 no-padding>
+                  <button ion-button color="secondary" small block (click)="orders(order.pedido_id)">
+                      Detalhes do pedido</button>
+              </ion-col>
+          </ion-row>
+      </ion-card>
+  </div>
+
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+      <p style="font-size: 12px; text-align: center;" ion-text color="light">
+          Super Horti Comércio de Verduras e Legumes LTDA</p>
+  </ion-toolbar>
+</ion-footer>

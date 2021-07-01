@@ -1,0 +1,49 @@
+<ion-content padding class="transparent-header" [ngStyle]="{'background-image': 'url(' + backgroundImage +')'}">
+
+    <div padding>
+
+        <form [formGroup]="registration" (ngSubmit)="onSubmit()">
+        
+            <ion-row>
+                <ion-col>
+        
+                    <ion-list inset class="no-border">
+        
+                        <img class="logo" src="assets/img/logo-2.png" />
+        
+                        <ion-item>
+                            <ion-input type="email" name="email" placeholder="Digite seu e-mail" id="email"
+                                formControlName="email" required></ion-input>
+                        </ion-item>
+        
+                        <ion-item>
+                            <ion-input type="password" name="password" placeholder="Digite uma senha" id="password"
+                                formControlName="password" required></ion-input>
+                        </ion-item>
+        
+                    </ion-list>
+        
+                </ion-col>
+            </ion-row>
+            
+            <ion-row>
+                <ion-col>
+                    <button class="login-btn" type="submit" [disabled]="!registration.valid" ion-button>CADASTRAR</button>
+                </ion-col>
+            </ion-row>
+        
+        </form>
+
+        <br>
+
+        <ion-row>
+            <ion-col col-12 text-center>
+                <button (click)="navLogin()" ion-button small color="energy">ENTRAR</button>
+            </ion-col>
+            <ion-col col-12 text-center>
+                <button (click)="back()" ion-button small color="dark">VOLTAR</button>
+            </ion-col>
+        </ion-row>
+
+    </div>
+</ion-content>
