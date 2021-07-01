@@ -1,1 +1,1 @@
-App Super Horti
+Aplicativo de agendamento de pedidos.
