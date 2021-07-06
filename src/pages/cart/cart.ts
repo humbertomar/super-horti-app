@@ -276,7 +276,7 @@ export class CartPage {
     if(localStorage.getItem("uid")){
 
       this.db.list("/users/" + this.af.auth.currentUser.uid + "/address").snapshotChanges().pipe(map(changes =>
-        changes.map(c => ({ $key: c.payload.key, ...c.payload.val() }))
+        changes.map(c => ({ $key: c.payload.key, ...c.payload.val() as {} }))
       )).subscribe((res: any) => {
         console.log(res);
         if(res.length > 0){
@@ -322,7 +322,7 @@ export class CartPage {
           //console.log(localStorage.getItem("uid"));
 
           if (localStorage.getItem("uid")) {
-            this.db.list("/users/" + localStorage.getItem("uid") + "/address").snapshotChanges().pipe(map(changes => changes.map(c => ({ $key: c.payload.key, ...c.payload.val() }))
+            this.db.list("/users/" + localStorage.getItem("uid") + "/address").snapshotChanges().pipe(map(changes => changes.map(c => ({ $key: c.payload.key, ...c.payload.val() as {} }))
             )).subscribe((res: any) => {
               if (res.length > 0) {
 
@@ -417,7 +417,7 @@ export class CartPage {
           //console.log(localStorage.getItem("uid"));
 
           if (localStorage.getItem("uid")) {
-            this.db.list("/users/" + localStorage.getItem("uid") + "/address").snapshotChanges().pipe(map(changes => changes.map(c => ({ $key: c.payload.key, ...c.payload.val() }))
+            this.db.list("/users/" + localStorage.getItem("uid") + "/address").snapshotChanges().pipe(map(changes => changes.map(c => ({ $key: c.payload.key, ...c.payload.val() as {} }))
             )).subscribe((res: any) => {
               if (res.length > 0) {
   

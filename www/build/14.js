@@ -1,15 +1,15 @@
 webpackJsonp([14],{
 
-/***/ 654:
+/***/ 657:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AddAddressPageModule", function() { return AddAddressPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__add_address__ = __webpack_require__(765);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_pipes_module__ = __webpack_require__(676);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__add_address__ = __webpack_require__(768);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_pipes_module__ = __webpack_require__(679);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -37,14 +37,14 @@ var AddAddressPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 676:
+/***/ 679:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PipesModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_pipe__ = __webpack_require__(677);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(678);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_pipe__ = __webpack_require__(680);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(681);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -71,7 +71,7 @@ var PipesModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 677:
+/***/ 680:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -106,7 +106,7 @@ var AppPipe = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 678:
+/***/ 681:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -126,21 +126,21 @@ var AppPipe = /** @class */ (function () {
 /* unused harmony export TranslateDirective */
 /* unused harmony export TranslatePipe */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_of__ = __webpack_require__(431);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_of__ = __webpack_require__(433);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_observable_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__(47);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operators_share__ = __webpack_require__(679);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operators_share__ = __webpack_require__(682);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operators_share___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_operators_share__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operators_map__ = __webpack_require__(681);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operators_map__ = __webpack_require__(684);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operators_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_operators_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_operators_merge__ = __webpack_require__(683);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_operators_merge__ = __webpack_require__(686);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_operators_merge___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_operators_merge__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_operators_switchMap__ = __webpack_require__(685);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_operators_switchMap__ = __webpack_require__(688);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_operators_switchMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_operators_switchMap__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_operators_toArray__ = __webpack_require__(687);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_operators_toArray__ = __webpack_require__(690);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_operators_toArray___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_rxjs_operators_toArray__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_operators_take__ = __webpack_require__(689);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_operators_take__ = __webpack_require__(692);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_operators_take___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_rxjs_operators_take__);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
@@ -4000,55 +4000,17 @@ var TranslateModule_1;
 
 /***/ }),
 
-/***/ 679:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-function __export(m) {
-    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-}
-Object.defineProperty(exports, "__esModule", { value: true });
-__export(__webpack_require__(680));
-//# sourceMappingURL=share.js.map
-
-/***/ }),
-
-/***/ 680:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", { value: true });
-var operators_1 = __webpack_require__(25);
-exports.share = operators_1.share;
-//# sourceMappingURL=share.js.map
-
-/***/ }),
-
-/***/ 681:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-function __export(m) {
-    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-}
-Object.defineProperty(exports, "__esModule", { value: true });
-__export(__webpack_require__(682));
-//# sourceMappingURL=map.js.map
-
-/***/ }),
-
 /***/ 682:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
+function __export(m) {
+    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
 Object.defineProperty(exports, "__esModule", { value: true });
-var operators_1 = __webpack_require__(25);
-exports.map = operators_1.map;
-//# sourceMappingURL=map.js.map
+__export(__webpack_require__(683));
+//# sourceMappingURL=share.js.map
 
 /***/ }),
 
@@ -4057,12 +4019,10 @@ exports.map = operators_1.map;
 
 "use strict";
 
-function __export(m) {
-    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-}
 Object.defineProperty(exports, "__esModule", { value: true });
-__export(__webpack_require__(684));
-//# sourceMappingURL=merge.js.map
+var operators_1 = __webpack_require__(22);
+exports.share = operators_1.share;
+//# sourceMappingURL=share.js.map
 
 /***/ }),
 
@@ -4071,10 +4031,12 @@ __export(__webpack_require__(684));
 
 "use strict";
 
+function __export(m) {
+    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
 Object.defineProperty(exports, "__esModule", { value: true });
-var operators_1 = __webpack_require__(25);
-exports.merge = operators_1.merge;
-//# sourceMappingURL=merge.js.map
+__export(__webpack_require__(685));
+//# sourceMappingURL=map.js.map
 
 /***/ }),
 
@@ -4083,12 +4045,10 @@ exports.merge = operators_1.merge;
 
 "use strict";
 
-function __export(m) {
-    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-}
 Object.defineProperty(exports, "__esModule", { value: true });
-__export(__webpack_require__(686));
-//# sourceMappingURL=switchMap.js.map
+var operators_1 = __webpack_require__(22);
+exports.map = operators_1.map;
+//# sourceMappingURL=map.js.map
 
 /***/ }),
 
@@ -4097,10 +4057,12 @@ __export(__webpack_require__(686));
 
 "use strict";
 
+function __export(m) {
+    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
 Object.defineProperty(exports, "__esModule", { value: true });
-var operators_1 = __webpack_require__(25);
-exports.switchMap = operators_1.switchMap;
-//# sourceMappingURL=switchMap.js.map
+__export(__webpack_require__(687));
+//# sourceMappingURL=merge.js.map
 
 /***/ }),
 
@@ -4109,12 +4071,10 @@ exports.switchMap = operators_1.switchMap;
 
 "use strict";
 
-function __export(m) {
-    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-}
 Object.defineProperty(exports, "__esModule", { value: true });
-__export(__webpack_require__(688));
-//# sourceMappingURL=toArray.js.map
+var operators_1 = __webpack_require__(22);
+exports.merge = operators_1.merge;
+//# sourceMappingURL=merge.js.map
 
 /***/ }),
 
@@ -4123,10 +4083,12 @@ __export(__webpack_require__(688));
 
 "use strict";
 
+function __export(m) {
+    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
 Object.defineProperty(exports, "__esModule", { value: true });
-var operators_1 = __webpack_require__(25);
-exports.toArray = operators_1.toArray;
-//# sourceMappingURL=toArray.js.map
+__export(__webpack_require__(689));
+//# sourceMappingURL=switchMap.js.map
 
 /***/ }),
 
@@ -4135,12 +4097,10 @@ exports.toArray = operators_1.toArray;
 
 "use strict";
 
-function __export(m) {
-    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-}
 Object.defineProperty(exports, "__esModule", { value: true });
-__export(__webpack_require__(690));
-//# sourceMappingURL=take.js.map
+var operators_1 = __webpack_require__(22);
+exports.switchMap = operators_1.switchMap;
+//# sourceMappingURL=switchMap.js.map
 
 /***/ }),
 
@@ -4149,22 +4109,62 @@ __export(__webpack_require__(690));
 
 "use strict";
 
+function __export(m) {
+    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
 Object.defineProperty(exports, "__esModule", { value: true });
-var operators_1 = __webpack_require__(25);
+__export(__webpack_require__(691));
+//# sourceMappingURL=toArray.js.map
+
+/***/ }),
+
+/***/ 691:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var operators_1 = __webpack_require__(22);
+exports.toArray = operators_1.toArray;
+//# sourceMappingURL=toArray.js.map
+
+/***/ }),
+
+/***/ 692:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+function __export(m) {
+    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
+Object.defineProperty(exports, "__esModule", { value: true });
+__export(__webpack_require__(693));
+//# sourceMappingURL=take.js.map
+
+/***/ }),
+
+/***/ 693:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var operators_1 = __webpack_require__(22);
 exports.take = operators_1.take;
 //# sourceMappingURL=take.js.map
 
 /***/ }),
 
-/***/ 765:
+/***/ 768:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AddAddressPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(25);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_fire_database__ = __webpack_require__(53);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_fire_auth__ = __webpack_require__(71);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_fire_auth__ = __webpack_require__(70);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -4237,7 +4237,7 @@ var AddAddressPage = /** @class */ (function () {
     };
     AddAddressPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: "page-add-address",template:/*ion-inline-start:"E:\Nova pasta\Archive-bkp-300121-mod-a\src\pages\add-address\add-address.html"*/'<ion-header>\n    <ion-navbar>\n        <ion-title>Adicionar Endereço</ion-title>\n    </ion-navbar>\n</ion-header>\n<ion-content>\n\n    <ion-list class="adress-line">\n        <form (ngSubmit)="addAddress(f)" #f="ngForm">\n            <ion-label class="add-heading">\n                <ion-icon ios="ios-home" md="md-home"></ion-icon>\n                &nbsp;&nbsp; Insira o endereço\n            </ion-label>\n            <ion-row class="full-address">\n\n                <ion-item class="sub-address">\n                    <ion-input type="text" placeholder="Nome" name="nome" id="nome" [(ngModel)]="address.nome" required></ion-input>\n                </ion-item>\n                <ion-item class="sub-address">\n                    <ion-input type="text" placeholder="Cidade" name="cidade" id="cidade" [(ngModel)]="address.cidade" readonly></ion-input>\n                </ion-item>\n                <ion-item class="sub-address">\n                    <ion-input type="text" placeholder="Estado" name="estado" id="estado" [(ngModel)]="address.estado" readonly></ion-input>\n                </ion-item>\n                <ion-item class="sub-address">\n                    <ion-input type="text" placeholder="CEP" name="cep" id="cep" [(ngModel)]="address.cep" readonly></ion-input>\n                </ion-item>\n                <ion-item class="sub-address">\n                    <ion-input type="text" name="bairro" id="bairro" placeholder="Setor" [(ngModel)]="address.bairro"></ion-input>\n                </ion-item>\n                <ion-item class="sub-address">\n                    <ion-input type="text" name="contato" id="contato" [(ngModel)]="address.contato" placeholder="Telefone"></ion-input>\n                </ion-item>\n                <ion-item class="sub-address address-textarea">\n                    <ion-textarea rows="6" placeholder="Endereço" name="endereco" id="endereco" [(ngModel)]="address.endereco"\n                        required></ion-textarea>\n                </ion-item>\n            </ion-row>\n            <button class="checkOut-btn" ion-button block type="submit" [disabled]="!f.valid">\n                <ion-icon ios="ios-add" md="md-add"></ion-icon>\n                &nbsp;&nbsp;Adicionar Endereço\n            </button>\n        </form>\n    </ion-list>\n\n    <!--<ion-list class="adress-line">\n        <form (ngSubmit)="addAddress(f)" #f="ngForm">\n            <ion-label class="add-heading">\n                <ion-icon ios="ios-home" md="md-home"></ion-icon>\n                &nbsp;&nbsp; {{"Enter Address"}}\n            </ion-label>\n            <ion-row class="full-address">\n                <ion-item class="sub-address">\n                    <ion-input type="text" placeholder="{{\'Name\'}}" name="name" id="name" [(ngModel)]="address.name" required></ion-input>\n                </ion-item>\n                <ion-item class="sub-address">\n                    <ion-input type="text" placeholder="{{\'City\'}}" name="city" id="city" [(ngModel)]="address.city" required></ion-input>\n                </ion-item>\n                <ion-item class="sub-address">\n                    <ion-input type="number" placeholder="{{\'Pincode\'}}" name="pincode" id="pincode" [(ngModel)]="address.pincode"\n                        required></ion-input>\n                </ion-item>\n                <ion-item class="sub-address">\n                    <ion-input type="text" name="area" id="area" placeholder="{{\'Area / Locality\'}}" [(ngModel)]="address.area"></ion-input>\n                </ion-item>\n                <ion-item class="sub-address">\n                    <ion-input type="number" name="mobileNo" id="mobileNo" [(ngModel)]="address.mobileNo" placeholder="{{\'Mobile\'}}"></ion-input>\n                </ion-item>\n                <ion-item class="sub-address address-textarea">\n                    <ion-textarea rows="6" placeholder="{{\'Address\'}}" name="address" id="address" [(ngModel)]="address.address"\n                        required></ion-textarea>\n                </ion-item>\n            </ion-row>\n            <button class="checkOut-btn" ion-button block type="submit" [disabled]="!f.valid">\n                <ion-icon ios="ios-add" md="md-add"></ion-icon>\n                &nbsp;&nbsp;Adicionar Endereço\n            </button>\n        </form>\n    </ion-list>-->\n\n</ion-content>\n\n<ion-footer class="ion-no-border">\n    <ion-toolbar>\n        <p style="font-size: 12px; text-align: center;" ion-text color="light">\n            Super Horti Comércio de Verduras e Legumes LTDA</p>\n    </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"E:\Nova pasta\Archive-bkp-300121-mod-a\src\pages\add-address\add-address.html"*/
+            selector: "page-add-address",template:/*ion-inline-start:"/Users/Shared/projects/super-horti-app/src/pages/add-address/add-address.html"*/'<ion-header>\n    <ion-navbar>\n        <ion-title>Adicionar Endereço</ion-title>\n    </ion-navbar>\n</ion-header>\n<ion-content>\n\n    <ion-list class="adress-line">\n        <form (ngSubmit)="addAddress(f)" #f="ngForm">\n            <ion-label class="add-heading">\n                <ion-icon ios="ios-home" md="md-home"></ion-icon>\n                &nbsp;&nbsp; Insira o endereço\n            </ion-label>\n            <ion-row class="full-address">\n\n                <ion-item class="sub-address">\n                    <ion-input type="text" placeholder="Nome" name="nome" id="nome" [(ngModel)]="address.nome" required></ion-input>\n                </ion-item>\n                <ion-item class="sub-address">\n                    <ion-input type="text" placeholder="Cidade" name="cidade" id="cidade" [(ngModel)]="address.cidade" readonly></ion-input>\n                </ion-item>\n                <ion-item class="sub-address">\n                    <ion-input type="text" placeholder="Estado" name="estado" id="estado" [(ngModel)]="address.estado" readonly></ion-input>\n                </ion-item>\n                <ion-item class="sub-address">\n                    <ion-input type="text" placeholder="CEP" name="cep" id="cep" [(ngModel)]="address.cep" readonly></ion-input>\n                </ion-item>\n                <ion-item class="sub-address">\n                    <ion-input type="text" name="bairro" id="bairro" placeholder="Setor" [(ngModel)]="address.bairro"></ion-input>\n                </ion-item>\n                <ion-item class="sub-address">\n                    <ion-input type="text" name="contato" id="contato" [(ngModel)]="address.contato" placeholder="Telefone"></ion-input>\n                </ion-item>\n                <ion-item class="sub-address address-textarea">\n                    <ion-textarea rows="6" placeholder="Endereço" name="endereco" id="endereco" [(ngModel)]="address.endereco"\n                        required></ion-textarea>\n                </ion-item>\n            </ion-row>\n            <button class="checkOut-btn" ion-button block type="submit" [disabled]="!f.valid">\n                <ion-icon ios="ios-add" md="md-add"></ion-icon>\n                &nbsp;&nbsp;Adicionar Endereço\n            </button>\n        </form>\n    </ion-list>\n\n    <!--<ion-list class="adress-line">\n        <form (ngSubmit)="addAddress(f)" #f="ngForm">\n            <ion-label class="add-heading">\n                <ion-icon ios="ios-home" md="md-home"></ion-icon>\n                &nbsp;&nbsp; {{"Enter Address"}}\n            </ion-label>\n            <ion-row class="full-address">\n                <ion-item class="sub-address">\n                    <ion-input type="text" placeholder="{{\'Name\'}}" name="name" id="name" [(ngModel)]="address.name" required></ion-input>\n                </ion-item>\n                <ion-item class="sub-address">\n                    <ion-input type="text" placeholder="{{\'City\'}}" name="city" id="city" [(ngModel)]="address.city" required></ion-input>\n                </ion-item>\n                <ion-item class="sub-address">\n                    <ion-input type="number" placeholder="{{\'Pincode\'}}" name="pincode" id="pincode" [(ngModel)]="address.pincode"\n                        required></ion-input>\n                </ion-item>\n                <ion-item class="sub-address">\n                    <ion-input type="text" name="area" id="area" placeholder="{{\'Area / Locality\'}}" [(ngModel)]="address.area"></ion-input>\n                </ion-item>\n                <ion-item class="sub-address">\n                    <ion-input type="number" name="mobileNo" id="mobileNo" [(ngModel)]="address.mobileNo" placeholder="{{\'Mobile\'}}"></ion-input>\n                </ion-item>\n                <ion-item class="sub-address address-textarea">\n                    <ion-textarea rows="6" placeholder="{{\'Address\'}}" name="address" id="address" [(ngModel)]="address.address"\n                        required></ion-textarea>\n                </ion-item>\n            </ion-row>\n            <button class="checkOut-btn" ion-button block type="submit" [disabled]="!f.valid">\n                <ion-icon ios="ios-add" md="md-add"></ion-icon>\n                &nbsp;&nbsp;Adicionar Endereço\n            </button>\n        </form>\n    </ion-list>-->\n\n</ion-content>\n\n<ion-footer class="ion-no-border">\n    <ion-toolbar>\n        <p style="font-size: 12px; text-align: center;" ion-text color="light">\n            Super Horti Comércio de Verduras e Legumes LTDA</p>\n    </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"/Users/Shared/projects/super-horti-app/src/pages/add-address/add-address.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__angular_fire_auth__["a" /* AngularFireAuth */],
             __WEBPACK_IMPORTED_MODULE_2__angular_fire_database__["a" /* AngularFireDatabase */],

@@ -79,7 +79,7 @@ export class MeusEnderecosPage {
     this.noOfItems = this.Cart != null ? soma : null;
     
     this.db.list("/users/" + this.af.auth.currentUser.uid + "/address").snapshotChanges().pipe(map(changes =>
-      changes.map(c => ({ $key: c.payload.key, ...c.payload.val() }))
+      changes.map(c => ({ $key: c.payload.key, ...c.payload.val() as {} }))
     )).subscribe((res: any) => {
       this.addressList = res;
       //console.log(this.addressList);

@@ -1,14 +1,14 @@
 webpackJsonp([19],{
 
-/***/ 659:
+/***/ 662:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Exemplo2PageModule", function() { return Exemplo2PageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__exemplo2__ = __webpack_require__(770);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__exemplo2__ = __webpack_require__(773);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -38,13 +38,13 @@ var Exemplo2PageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 770:
+/***/ 773:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Exemplo2Page; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(25);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_geolocation__ = __webpack_require__(167);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_native_geocoder__ = __webpack_require__(168);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -219,7 +219,7 @@ var Exemplo2Page = /** @class */ (function () {
     };
     Exemplo2Page = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-exemplo2',template:/*ion-inline-start:"E:\Nova pasta\Archive-bkp-300121-mod-a\src\pages\exemplo2\exemplo2.html"*/'<ion-content>\n\n  <ion-row>\n    <ion-col col-12 text-center>\n      <button (click)="tryGeolocation()" ion-button small color="energy">Pegar Minha Localização Atual</button>\n    </ion-col>\n  </ion-row>\n\n  <ion-searchbar [(ngModel)]="autocomplete.input" (ionInput)="updateSearchResults()" placeholder="Digite seu endereço">\n  </ion-searchbar>\n\n  <ion-list [hidden]="autocompleteItems.length == 0">\n    <ion-item *ngFor="let item of autocompleteItems" tappable (click)="selectSearchResult(item)">\n      {{ item.description }}\n    </ion-item>\n  </ion-list>\n\n  <div id=\'map\'></div>\n\n</ion-content>\n'/*ion-inline-end:"E:\Nova pasta\Archive-bkp-300121-mod-a\src\pages\exemplo2\exemplo2.html"*/,
+            selector: 'page-exemplo2',template:/*ion-inline-start:"/Users/Shared/projects/super-horti-app/src/pages/exemplo2/exemplo2.html"*/'<ion-content>\n\n  <ion-row>\n    <ion-col col-12 text-center>\n      <button (click)="tryGeolocation()" ion-button small color="energy">Pegar Minha Localização Atual</button>\n    </ion-col>\n  </ion-row>\n\n  <ion-searchbar [(ngModel)]="autocomplete.input" (ionInput)="updateSearchResults()" placeholder="Digite seu endereço">\n  </ion-searchbar>\n\n  <ion-list [hidden]="autocompleteItems.length == 0">\n    <ion-item *ngFor="let item of autocompleteItems" tappable (click)="selectSearchResult(item)">\n      {{ item.description }}\n    </ion-item>\n  </ion-list>\n\n  <div id=\'map\'></div>\n\n</ion-content>\n'/*ion-inline-end:"/Users/Shared/projects/super-horti-app/src/pages/exemplo2/exemplo2.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavController"],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavParams"],

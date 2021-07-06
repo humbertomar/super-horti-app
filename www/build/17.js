@@ -1,14 +1,14 @@
 webpackJsonp([17],{
 
-/***/ 666:
+/***/ 669:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MeusEnderecosPageModule", function() { return MeusEnderecosPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__meus_enderecos__ = __webpack_require__(780);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__meus_enderecos__ = __webpack_require__(783);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -38,26 +38,29 @@ var MeusEnderecosPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 780:
+/***/ 783:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MeusEnderecosPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_fire_auth__ = __webpack_require__(71);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_fire_auth__ = __webpack_require__(70);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_fire_database__ = __webpack_require__(53);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operators__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operators__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_auth_service_auth_service__ = __webpack_require__(96);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__add_endereco_add_endereco__ = __webpack_require__(434);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__google_maps_geolocalizacao_google_maps_geolocalizacao__ = __webpack_require__(433);
-var __assign = (this && this.__assign) || Object.assign || function(t) {
-    for (var s, i = 1, n = arguments.length; i < n; i++) {
-        s = arguments[i];
-        for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
-            t[p] = s[p];
-    }
-    return t;
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__add_endereco_add_endereco__ = __webpack_require__(436);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__google_maps_geolocalizacao_google_maps_geolocalizacao__ = __webpack_require__(435);
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
 };
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -139,7 +142,7 @@ var MeusEnderecosPage = /** @class */ (function () {
         }
         else {
             if (address.$key == localStorage.getItem('keyAddress')) {
-                var alert_1 = this.alertCtrl.create({
+                var alert = this.alertCtrl.create({
                     title: "Atenção!",
                     subTitle: "Você não pode excluir o endereço que está sendo utilizado no momento!",
                     buttons: [
@@ -152,10 +155,10 @@ var MeusEnderecosPage = /** @class */ (function () {
                         }
                     ]
                 });
-                alert_1.present();
+                alert.present();
             }
             else {
-                var alert_2 = this.alertCtrl.create({
+                var alert = this.alertCtrl.create({
                     title: "Excluir!",
                     subTitle: "Você quer excluir esse endereço?",
                     buttons: [
@@ -174,7 +177,7 @@ var MeusEnderecosPage = /** @class */ (function () {
                         }
                     ]
                 });
-                alert_2.present();
+                alert.present();
             }
         }
     };
@@ -210,7 +213,7 @@ var MeusEnderecosPage = /** @class */ (function () {
                 console.log(this.dataSetGoogleMaps);
                 console.log(JSON.stringify(this.dataSetGoogleMaps));*/
                 if ((_this.dataSetGoogleMaps != 'Digite um CEP válido') && (_this.dataSetGoogleMaps != 'Não fazemos entrega nessa região!')) {
-                    var alert_3 = _this.alertCtrl.create({
+                    var alert = _this.alertCtrl.create({
                         title: 'Entregamos nesse CEP!',
                         subTitle: '',
                         buttons: [{
@@ -230,10 +233,10 @@ var MeusEnderecosPage = /** @class */ (function () {
                                 }
                             }]
                     });
-                    alert_3.present();
+                    alert.present();
                 }
                 else {
-                    var alert_4 = _this.alertCtrl.create({
+                    var alert = _this.alertCtrl.create({
                         title: _this.dataSetGoogleMaps,
                         subTitle: '',
                         buttons: [
@@ -245,7 +248,7 @@ var MeusEnderecosPage = /** @class */ (function () {
                             }
                         ]
                     });
-                    alert_4.present();
+                    alert.present();
                 }
             }, function (err) {
                 console.log(err);
@@ -258,20 +261,12 @@ var MeusEnderecosPage = /** @class */ (function () {
     MeusEnderecosPage.prototype.navcart = function () {
         this.navCtrl.push("CartPage");
     };
+    var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k;
     MeusEnderecosPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-meus-enderecos',template:/*ion-inline-start:"E:\Nova pasta\Archive-bkp-300121-mod-a\src\pages\meus-enderecos\meus-enderecos.html"*/'<ion-header class="ion-no-border">\n  <ion-toolbar>\n      <ion-buttons left>\n          <button color="light" ion-button menuToggle>\n              <ion-icon name="menu"></ion-icon>\n          </button>\n      </ion-buttons>\n      <ion-title class="title">\n          Configurações\n      </ion-title>\n      <ion-buttons end>\n          <button color="light" ion-button icon-only color="royal" (click)="navcart()" class="header-btn-cart">\n              <ion-icon name="cart"></ion-icon>\n              <ion-badge class="carts" item-right color="danger">{{noOfItems}}</ion-badge>\n          </button>\n      </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n\n  <ion-grid>\n  \n    <ion-fab right edge>\n      <button ion-fab mini (click)="selectAddress()"><ion-icon name="add"></ion-icon></button>\n    </ion-fab>\n  \n    <div class="login">\n      <ion-row>\n        <img class="img" [src]="url">\n        <br>\n      </ion-row>\n      <br>\n      <p class="name">Meus Endereços</p>\n    </div>\n  \n    <ion-row>\n  \n      <ion-col col-1>\n  \n      </ion-col>\n  \n      <ion-col col-10>\n  \n        <ion-row>\n          <ion-col col-12>\n          \n            <ion-list radio-group class="address-radio" [(ngModel)]="address.$key">\n              <div *ngFor="let address of addressList">\n                <ion-item>\n                  <ion-label>\n                    <p class="show-address">{{address.nome}} </p>\n                    <p class="show-address">{{address.endereco}}<span *ngIf="address.numero">,\n                        {{address.numero}}</span></p>\n            \n                    <p *ngIf="address.complemento">{{address.complemento}}</p>\n                    <p class="show-address">{{address.cidade}} - {{address.estado}}</p>\n            \n                    <p class="show-address">{{address.cep}}</p>\n                    <p class="show-address">{{address.contato}}</p>\n                    \n                  </ion-label>\n                  <ion-radio (ionSelect)="selectAddress2(address.$key, address)" [value]="address.$key"></ion-radio>\n                </ion-item>\n                <button ion-button (click)="selectAddress(address)">\n                  <ion-icon ios="ios-trash" md="md-trash"></ion-icon>&nbsp;&nbsp;Excluir\n                </button>\n              </div>\n              \n            </ion-list>\n          \n          </ion-col>\n        </ion-row>\n  \n      </ion-col>\n  \n      <ion-col col-1>\n  \n      </ion-col>\n  \n    </ion-row>\n  \n  </ion-grid>\n\n</ion-content>\n\n<ion-footer class="ion-no-border">\n  <ion-toolbar>\n      <p style="font-size: 12px; text-align: center;" ion-text color="light">\n          Super Horti Comércio de Verduras e Legumes LTDA</p>\n  </ion-toolbar>\n</ion-footer>'/*ion-inline-end:"E:\Nova pasta\Archive-bkp-300121-mod-a\src\pages\meus-enderecos\meus-enderecos.html"*/,
+            selector: 'page-meus-enderecos',template:/*ion-inline-start:"/Users/Shared/projects/super-horti-app/src/pages/meus-enderecos/meus-enderecos.html"*/'<ion-header class="ion-no-border">\n  <ion-toolbar>\n      <ion-buttons left>\n          <button color="light" ion-button menuToggle>\n              <ion-icon name="menu"></ion-icon>\n          </button>\n      </ion-buttons>\n      <ion-title class="title">\n          Configurações\n      </ion-title>\n      <ion-buttons end>\n          <button color="light" ion-button icon-only color="royal" (click)="navcart()" class="header-btn-cart">\n              <ion-icon name="cart"></ion-icon>\n              <ion-badge class="carts" item-right color="danger">{{noOfItems}}</ion-badge>\n          </button>\n      </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n\n  <ion-grid>\n  \n    <ion-fab right edge>\n      <button ion-fab mini (click)="selectAddress()"><ion-icon name="add"></ion-icon></button>\n    </ion-fab>\n  \n    <div class="login">\n      <ion-row>\n        <img class="img" [src]="url">\n        <br>\n      </ion-row>\n      <br>\n      <p class="name">Meus Endereços</p>\n    </div>\n  \n    <ion-row>\n  \n      <ion-col col-1>\n  \n      </ion-col>\n  \n      <ion-col col-10>\n  \n        <ion-row>\n          <ion-col col-12>\n          \n            <ion-list radio-group class="address-radio" [(ngModel)]="address.$key">\n              <div *ngFor="let address of addressList">\n                <ion-item>\n                  <ion-label>\n                    <p class="show-address">{{address.nome}} </p>\n                    <p class="show-address">{{address.endereco}}<span *ngIf="address.numero">,\n                        {{address.numero}}</span></p>\n            \n                    <p *ngIf="address.complemento">{{address.complemento}}</p>\n                    <p class="show-address">{{address.cidade}} - {{address.estado}}</p>\n            \n                    <p class="show-address">{{address.cep}}</p>\n                    <p class="show-address">{{address.contato}}</p>\n                    \n                  </ion-label>\n                  <ion-radio (ionSelect)="selectAddress2(address.$key, address)" [value]="address.$key"></ion-radio>\n                </ion-item>\n                <button ion-button (click)="selectAddress(address)">\n                  <ion-icon ios="ios-trash" md="md-trash"></ion-icon>&nbsp;&nbsp;Excluir\n                </button>\n              </div>\n              \n            </ion-list>\n          \n          </ion-col>\n        </ion-row>\n  \n      </ion-col>\n  \n      <ion-col col-1>\n  \n      </ion-col>\n  \n    </ion-row>\n  \n  </ion-grid>\n\n</ion-content>\n\n<ion-footer class="ion-no-border">\n  <ion-toolbar>\n      <p style="font-size: 12px; text-align: center;" ion-text color="light">\n          Super Horti Comércio de Verduras e Legumes LTDA</p>\n  </ion-toolbar>\n</ion-footer>'/*ion-inline-end:"/Users/Shared/projects/super-horti-app/src/pages/meus-enderecos/meus-enderecos.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__angular_fire_auth__["a" /* AngularFireAuth */],
-            __WEBPACK_IMPORTED_MODULE_3__angular_fire_database__["a" /* AngularFireDatabase */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["ToastController"],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["LoadingController"],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavController"],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["Platform"],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["Events"],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["ModalController"],
-            __WEBPACK_IMPORTED_MODULE_5__providers_auth_service_auth_service__["a" /* AuthServiceProvider */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["AlertController"]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__angular_fire_auth__["a" /* AngularFireAuth */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_fire_auth__["a" /* AngularFireAuth */]) === "function" ? _a : Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__angular_fire_database__["a" /* AngularFireDatabase */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_fire_database__["a" /* AngularFireDatabase */]) === "function" ? _b : Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["ToastController"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["ToastController"]) === "function" ? _c : Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["LoadingController"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["LoadingController"]) === "function" ? _d : Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavController"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavController"]) === "function" ? _e : Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["Platform"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["Platform"]) === "function" ? _f : Object, typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["Events"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["Events"]) === "function" ? _g : Object, typeof (_h = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["ModalController"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["ModalController"]) === "function" ? _h : Object, typeof (_j = typeof __WEBPACK_IMPORTED_MODULE_5__providers_auth_service_auth_service__["a" /* AuthServiceProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__providers_auth_service_auth_service__["a" /* AuthServiceProvider */]) === "function" ? _j : Object, typeof (_k = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["AlertController"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["AlertController"]) === "function" ? _k : Object])
     ], MeusEnderecosPage);
     return MeusEnderecosPage;
 }());

@@ -73,10 +73,9 @@
     "zone.js": "0.8.18"
   },
   "devDependencies": {
-    "@angular/cli": "^9.1.7",
     "@ionic/app-scripts": "^3.2.3",
     "cordova-plugin-ionic-keyboard": "^2.2.0",
-    "typescript": "^2.6.2"
+    "typescript": "^3.0.0"
   },
   "cordovaPlugins": [
     "cordova-plugin-whitelist",

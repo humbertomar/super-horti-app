@@ -18,7 +18,7 @@ export class FirebaseServiceProvider {
     return this.db.list(path, ref => ref.orderByKey())
       .snapshotChanges()
       .map(data => {
-        return data.map(d => ({ key: d.payload.key, ...d.payload.val() }));
+        return data.map(d => ({ key: d.payload.key, ...d.payload.val() as {} }));
       })
   }
 
@@ -27,7 +27,7 @@ export class FirebaseServiceProvider {
       //return this.db.list(path, ref => ref.orderByChild(item1).equalTo(item2))
         .snapshotChanges()
         .map(data => {
-          return data.map(d => ({ key: d.payload.key, ...d.payload.val() }));
+          return data.map(d => ({ key: d.payload.key, ...d.payload.val() as {} }));
         })
     }
 
@@ -36,14 +36,14 @@ export class FirebaseServiceProvider {
     return this.db.list(path, ref => ref.orderByChild(item1).equalTo(item2))
       .snapshotChanges()
       .map(data => {
-        return data.map(d => ({ key: d.payload.key, ...d.payload.val() }));
+        return data.map(d => ({ key: d.payload.key, ...d.payload.val() as {} }));
       })
   }
 
   get(path: string, key: string) {
     return this.db.object(path + key).snapshotChanges()
       .map(d => {
-        return { key: d.key, ...d.payload.val() };
+        return { key: d.key, ...d.payload.val() as {}};
       });
   }
 

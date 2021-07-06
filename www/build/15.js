@@ -1,14 +1,14 @@
 webpackJsonp([15],{
 
-/***/ 665:
+/***/ 668:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MapPageModule", function() { return MapPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__map__ = __webpack_require__(775);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__map__ = __webpack_require__(778);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -38,19 +38,19 @@ var MapPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 775:
+/***/ 778:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MapPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(25);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_geolocation__ = __webpack_require__(167);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Observable__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Observable__ = __webpack_require__(47);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_storage__ = __webpack_require__(776);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_spinner_spinner__ = __webpack_require__(440);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_map_map__ = __webpack_require__(441);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_storage__ = __webpack_require__(779);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_spinner_spinner__ = __webpack_require__(442);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_map_map__ = __webpack_require__(443);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -253,7 +253,7 @@ var MapPage = /** @class */ (function () {
     ], MapPage.prototype, "searchbar", void 0);
     MapPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-map',template:/*ion-inline-start:"E:\Nova pasta\Archive-bkp-300121-mod-a\src\pages\map\map.html"*/'<ion-content>\n  <ion-buttons float-end class="current-location">\n    <button ion-button icon-only (click)="currentLocation()">\n      <img src="./assets/icon/current-location.png" alt="">\n    </button>\n  </ion-buttons>\n\n  <ion-searchbar autocorrect="off" autocapitalize="off" spellcheck="off" #searchbar placeholder="Search..." class="search-box"></ion-searchbar>\n\n  <div #map id="map" class="map"></div>\n  <div class="centerMarker"></div>\n  <div class="address-view">\n    <ion-list>\n      <ion-item no-lines class="help-text">\n        Drag map to change Address\n      </ion-item>\n      <ion-item no-lines class="address-item">\n        <ion-label stacked class="title-label">ADDRESS</ion-label>\n        <ion-textarea class="address" [(ngModel)]="address"></ion-textarea>\n      </ion-item>\n      <ion-item>\n        <button ion-button full class="primary-btn" (click)="closeModal()">\n          Select\n        </button>\n      </ion-item>\n    </ion-list>\n  </div>\n</ion-content>\n'/*ion-inline-end:"E:\Nova pasta\Archive-bkp-300121-mod-a\src\pages\map\map.html"*/,
+            selector: 'page-map',template:/*ion-inline-start:"/Users/Shared/projects/super-horti-app/src/pages/map/map.html"*/'<ion-content>\n  <ion-buttons float-end class="current-location">\n    <button ion-button icon-only (click)="currentLocation()">\n      <img src="./assets/icon/current-location.png" alt="">\n    </button>\n  </ion-buttons>\n\n  <ion-searchbar autocorrect="off" autocapitalize="off" spellcheck="off" #searchbar placeholder="Search..." class="search-box"></ion-searchbar>\n\n  <div #map id="map" class="map"></div>\n  <div class="centerMarker"></div>\n  <div class="address-view">\n    <ion-list>\n      <ion-item no-lines class="help-text">\n        Drag map to change Address\n      </ion-item>\n      <ion-item no-lines class="address-item">\n        <ion-label stacked class="title-label">ADDRESS</ion-label>\n        <ion-textarea class="address" [(ngModel)]="address"></ion-textarea>\n      </ion-item>\n      <ion-item>\n        <button ion-button full class="primary-btn" (click)="closeModal()">\n          Select\n        </button>\n      </ion-item>\n    </ion-list>\n  </div>\n</ion-content>\n'/*ion-inline-end:"/Users/Shared/projects/super-horti-app/src/pages/map/map.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavController"],
             __WEBPACK_IMPORTED_MODULE_2__ionic_native_geolocation__["a" /* Geolocation */],
@@ -272,13 +272,13 @@ var MapPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 776:
+/***/ 779:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* unused harmony export IonicStorageModule */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__storage__ = __webpack_require__(777);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__storage__ = __webpack_require__(780);
 /* unused harmony reexport StorageConfigToken */
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_1__storage__["a"]; });
 
@@ -309,7 +309,7 @@ var IonicStorageModule = (function () {
 
 /***/ }),
 
-/***/ 777:
+/***/ 780:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -318,9 +318,9 @@ var IonicStorageModule = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return StorageConfigToken; });
 /* harmony export (immutable) */ __webpack_exports__["c"] = provideStorage;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_localforage__ = __webpack_require__(778);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_localforage__ = __webpack_require__(781);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_localforage___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_localforage__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_localforage_cordovasqlitedriver__ = __webpack_require__(779);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_localforage_cordovasqlitedriver__ = __webpack_require__(782);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_localforage_cordovasqlitedriver___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_localforage_cordovasqlitedriver__);
 
 
@@ -552,7 +552,7 @@ function provideStorage(storageConfig) {
 
 /***/ }),
 
-/***/ 778:
+/***/ 781:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {var require;var require;/*!
@@ -2860,7 +2860,7 @@ module.exports = localforage_js;
 
 /***/ }),
 
-/***/ 779:
+/***/ 782:
 /***/ (function(module, exports, __webpack_require__) {
 
 (function (global, factory) {

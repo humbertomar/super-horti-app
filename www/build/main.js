@@ -22,91 +22,91 @@ webpackEmptyAsyncContext.id = 197;
 
 var map = {
 	"../pages/about-us/about-us.module": [
-		653,
+		656,
 		3
 	],
 	"../pages/add-address/add-address.module": [
-		654,
+		657,
 		14
 	],
 	"../pages/address-list/address-list.module": [
-		655,
+		658,
 		13
 	],
 	"../pages/cart/cart.module": [
-		656,
+		659,
 		12
 	],
 	"../pages/category/category.module": [
-		657,
+		660,
 		11
 	],
 	"../pages/exemplo1/exemplo1.module": [
-		658,
+		661,
 		20
 	],
 	"../pages/exemplo2/exemplo2.module": [
-		659,
+		662,
 		19
 	],
 	"../pages/exemplo3/exemplo3.module": [
-		660,
+		663,
 		18
 	],
 	"../pages/forgot-password/forgot-password.module": [
-		661,
+		664,
 		1
 	],
 	"../pages/google-maps-geolocalizacao/google-maps-geolocalizacao.module": [
-		662,
+		665,
 		21
 	],
 	"../pages/home/home.module": [
-		663,
+		666,
 		10
 	],
 	"../pages/login/login.module": [
-		664,
+		667,
 		0
 	],
 	"../pages/map/map.module": [
-		665,
+		668,
 		15
 	],
 	"../pages/meus-enderecos/meus-enderecos.module": [
-		666,
+		669,
 		17
 	],
 	"../pages/order-list/order-list.module": [
-		667,
+		670,
 		9
 	],
 	"../pages/orders-schedule/orders-schedule.module": [
-		668,
+		671,
 		16
 	],
 	"../pages/orders/orders.module": [
-		669,
+		672,
 		8
 	],
 	"../pages/product-details/product-details.module": [
-		670,
+		673,
 		7
 	],
 	"../pages/product-list/product-list.module": [
-		671,
+		674,
 		2
 	],
 	"../pages/registration/registration.module": [
-		672,
+		675,
 		6
 	],
 	"../pages/settings/settings.module": [
-		673,
+		676,
 		5
 	],
 	"../pages/thankyou/thankyou.module": [
-		674,
+		677,
 		4
 	]
 };
@@ -126,7 +126,7 @@ module.exports = webpackAsyncContext;
 
 /***/ }),
 
-/***/ 432:
+/***/ 434:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -135,13 +135,16 @@ module.exports = webpackAsyncContext;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__ = __webpack_require__(89);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_fire_database__ = __webpack_require__(53);
-var __assign = (this && this.__assign) || Object.assign || function(t) {
-    for (var s, i = 1, n = arguments.length; i < n; i++) {
-        s = arguments[i];
-        for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
-            t[p] = s[p];
-    }
-    return t;
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
 };
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -204,9 +207,10 @@ var FirebaseServiceProvider = /** @class */ (function () {
         //return this.db.list('courses').remove(course.key);
         return this.db.list(db_fb).remove(key);
     };
+    var _a;
     FirebaseServiceProvider = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__angular_fire_database__["a" /* AngularFireDatabase */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__angular_fire_database__["a" /* AngularFireDatabase */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_fire_database__["a" /* AngularFireDatabase */]) === "function" ? _a : Object])
     ], FirebaseServiceProvider);
     return FirebaseServiceProvider;
 }());
@@ -215,16 +219,16 @@ var FirebaseServiceProvider = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 433:
+/***/ 435:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GoogleMapsGeolocalizacaoPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(25);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_geolocation__ = __webpack_require__(167);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_native_geocoder__ = __webpack_require__(168);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_diagnostic__ = __webpack_require__(387);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_diagnostic__ = __webpack_require__(389);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -268,7 +272,7 @@ var GoogleMapsGeolocalizacaoPage = /** @class */ (function () {
         this.diagnostic.isLocationEnabled().then(function (res) {
             //alert('Is Location Enabled? '+ res);
             if (res == false) {
-                var confirm = _this.alertCtrl.create({
+                var confirm_1 = _this.alertCtrl.create({
                     title: '<b>GPS Desativado</b>',
                     message: 'As informações de localização não estão disponíveis neste dispositivo. Vá para Configurações e habilite o GPS.',
                     buttons: [
@@ -280,7 +284,7 @@ var GoogleMapsGeolocalizacaoPage = /** @class */ (function () {
                         }
                     ]
                 });
-                confirm.present();
+                confirm_1.present();
             }
         }).catch(function (e) { return console.error(e); });
     };
@@ -470,7 +474,7 @@ var GoogleMapsGeolocalizacaoPage = /** @class */ (function () {
         this.diagnostic.isLocationEnabled().then(function (res) {
             //alert('Is Location Enabled? '+ res);
             if (res == false) {
-                var confirm = _this.alertCtrl.create({
+                var confirm_2 = _this.alertCtrl.create({
                     title: '<b>GPS Desativado</b>',
                     message: 'As informações de localização não estão disponíveis neste dispositivo. Vá para Configurações e habilite o GPS.',
                     buttons: [
@@ -482,7 +486,7 @@ var GoogleMapsGeolocalizacaoPage = /** @class */ (function () {
                         }
                     ]
                 });
-                confirm.present();
+                confirm_2.present();
             }
             else {
                 _this.clearMarkers();
@@ -578,12 +582,19 @@ var GoogleMapsGeolocalizacaoPage = /** @class */ (function () {
             }
         }).catch(function (e) { return console.error(e); });
     };
-    var _a, _b, _c, _d, _e, _f, _g, _h, _j;
     GoogleMapsGeolocalizacaoPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-google-maps-geolocalizacao',template:/*ion-inline-start:"E:\Nova pasta\Archive-bkp-300121-mod-a\src\pages\google-maps-geolocalizacao\google-maps-geolocalizacao.html"*/'<ion-content padding class="transparent-header" [ngStyle]="{\'background-image\': \'url(\' + backgroundImage +\')\'}">\n\n  <ion-fab top right>\n    <button ion-fab color="verde-escuro" (click)="cepIn(0)">\n      <ion-icon name="md-close"></ion-icon>\n    </button>\n  </ion-fab>\n\n  <ion-row>\n    <ion-col col-12 text-center>\n      <button (click)="tryGeolocation()" ion-button small color="energy">Pegar Minha Localização Atual</button>\n    </ion-col>\n  </ion-row>\n\n  <ion-searchbar [(ngModel)]="autocomplete.input" (ionInput)="updateSearchResults()" placeholder="Digite seu endereço">\n  </ion-searchbar>\n\n  <ion-list [hidden]="autocompleteItems.length == 0">\n    <ion-item *ngFor="let item of autocompleteItems" tappable (click)="selectSearchResult(item)">\n      {{ item.description }}\n    </ion-item>\n  </ion-list>\n\n  <div id=\'map\'></div>\n\n  <ion-row>\n    <ion-col>\n      <button class="login-btn" (click)="cepIn(1)" type="submit" ion-button>ENVIAR</button>\n    </ion-col>\n  </ion-row>\n\n</ion-content>\n'/*ion-inline-end:"E:\Nova pasta\Archive-bkp-300121-mod-a\src\pages\google-maps-geolocalizacao\google-maps-geolocalizacao.html"*/,
+            selector: 'page-google-maps-geolocalizacao',template:/*ion-inline-start:"/Users/Shared/projects/super-horti-app/src/pages/google-maps-geolocalizacao/google-maps-geolocalizacao.html"*/'<ion-content padding class="transparent-header" [ngStyle]="{\'background-image\': \'url(\' + backgroundImage +\')\'}">\n\n  <ion-fab top right>\n    <button ion-fab color="verde-escuro" (click)="cepIn(0)">\n      <ion-icon name="md-close"></ion-icon>\n    </button>\n  </ion-fab>\n\n  <ion-row>\n    <ion-col col-12 text-center>\n      <button (click)="tryGeolocation()" ion-button small color="energy">Pegar Minha Localização Atual</button>\n    </ion-col>\n  </ion-row>\n\n  <ion-searchbar [(ngModel)]="autocomplete.input" (ionInput)="updateSearchResults()" placeholder="Digite seu endereço">\n  </ion-searchbar>\n\n  <ion-list [hidden]="autocompleteItems.length == 0">\n    <ion-item *ngFor="let item of autocompleteItems" tappable (click)="selectSearchResult(item)">\n      {{ item.description }}\n    </ion-item>\n  </ion-list>\n\n  <div id=\'map\'></div>\n\n  <ion-row>\n    <ion-col>\n      <button class="login-btn" (click)="cepIn(1)" type="submit" ion-button>ENVIAR</button>\n    </ion-col>\n  </ion-row>\n\n</ion-content>\n'/*ion-inline-end:"/Users/Shared/projects/super-horti-app/src/pages/google-maps-geolocalizacao/google-maps-geolocalizacao.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["ViewController"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["ViewController"]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["LoadingController"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["LoadingController"]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavController"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavController"]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavParams"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavParams"]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["NgZone"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["NgZone"]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_geolocation__["a" /* Geolocation */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_geolocation__["a" /* Geolocation */]) === "function" && _f || Object, typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_native_native_geocoder__["a" /* NativeGeocoder */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_native_native_geocoder__["a" /* NativeGeocoder */]) === "function" && _g || Object, typeof (_h = typeof __WEBPACK_IMPORTED_MODULE_4__ionic_native_diagnostic__["a" /* Diagnostic */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__ionic_native_diagnostic__["a" /* Diagnostic */]) === "function" && _h || Object, typeof (_j = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["AlertController"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["AlertController"]) === "function" && _j || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["ViewController"],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["LoadingController"],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavController"],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavParams"],
+            __WEBPACK_IMPORTED_MODULE_0__angular_core__["NgZone"],
+            __WEBPACK_IMPORTED_MODULE_2__ionic_native_geolocation__["a" /* Geolocation */],
+            __WEBPACK_IMPORTED_MODULE_3__ionic_native_native_geocoder__["a" /* NativeGeocoder */],
+            __WEBPACK_IMPORTED_MODULE_4__ionic_native_diagnostic__["a" /* Diagnostic */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["AlertController"]])
     ], GoogleMapsGeolocalizacaoPage);
     return GoogleMapsGeolocalizacaoPage;
 }());
@@ -592,15 +603,15 @@ var GoogleMapsGeolocalizacaoPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 434:
+/***/ 436:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AddEnderecoPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(25);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_fire_database__ = __webpack_require__(53);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_fire_auth__ = __webpack_require__(71);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_fire_auth__ = __webpack_require__(70);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_auth_service_auth_service__ = __webpack_require__(96);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -685,7 +696,7 @@ var AddEnderecoPage = /** @class */ (function () {
     };
     AddEnderecoPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-add-endereco',template:/*ion-inline-start:"E:\Nova pasta\Archive-bkp-300121-mod-a\src\pages\add-endereco\add-endereco.html"*/'<ion-content padding class="transparent-header" [ngStyle]="{\'background-image\': \'url(\' + backgroundImage +\')\'}">\n\n    <div padding>\n\n        <ion-fab top right>\n            <button ion-fab color="verde-escuro" (click)="close(1)">\n                <ion-icon name="md-close"></ion-icon>\n            </button>\n        </ion-fab>\n\n        <ion-list>\n            <form (ngSubmit)="addAddress(f)" #f="ngForm">\n                <ion-label class="add-heading">\n                    <strong>Insira o endereço para entrega</strong>\n                </ion-label>\n                <ion-row class="full-address">\n                    <!--<div class="error">\n                                    <p><sub>Nome é obrigatório</sub></p>\n                                </div>-->\n                    <ion-item>\n                        <ion-input type="text" placeholder="Nome - Obritagório" name="nome" id="nome" [(ngModel)]="address.nome"\n                            required>\n                        </ion-input>\n                    </ion-item>\n\n                    <ion-item>\n                        <ion-input type="text" name="contato" id="contato"\n                            [brmasker]="{mask:\'(00) 00000-0000)\', len:15}" [(ngModel)]="address.contato"\n                            placeholder="Telefone - Obritagório" required></ion-input>\n                    </ion-item>\n\n                    <ion-item class="sub-address">\n                        <ion-input type="text" placeholder="Logradouro" name="endereco" id="endereco"\n                            [(ngModel)]="address.endereco" disabled required></ion-input>\n                    </ion-item>\n\n                    <ion-item>\n                        <ion-input type="text" placeholder="Número - Obritagório" name="numero" id="numero"\n                            [(ngModel)]="address.numero" required></ion-input>\n                    </ion-item>\n\n                    <ion-item>\n                        <ion-input type="text" placeholder="Complemento - Obritagório" name="complemento" id="complemento"\n                            [(ngModel)]="address.complemento" required></ion-input>\n                    </ion-item>\n\n                    <ion-item class="sub-address">\n                        <ion-input type="text" name="bairro" id="bairro" placeholder="Bairro"\n                            [(ngModel)]="address.bairro" disabled required>\n                        </ion-input>\n                    </ion-item>\n\n                    <ion-item class="sub-address">\n                        <ion-input type="text" placeholder="Cidade" name="cidade" id="cidade"\n                            [(ngModel)]="address.cidade" disabled required></ion-input>\n                    </ion-item>\n\n                    <ion-item class="sub-address">\n                        <ion-input type="text" placeholder="Estado" name="estado" id="estado" [(ngModel)]="address.estado" disabled required></ion-input>\n                        <!--<ion-label>Estado</ion-label>-->\n                        <!--<ion-select name="estado" id="estado" [(ngModel)]="address.estado" disabled required>\n                            <ion-option value="AC">Acre</ion-option>\n                            <ion-option value="AL">Alagoas</ion-option>\n                            <ion-option value="AP">Amapá</ion-option>\n                            <ion-option value="AM">Amazonas</ion-option>\n                            <ion-option value="BA">Bahia</ion-option>\n                            <ion-option value="CE">Ceará</ion-option>\n                            <ion-option value="DF">Distrito Federal</ion-option>\n                            <ion-option value="ES">Espírito Santo</ion-option>\n                            <ion-option value="GO">Goiás</ion-option>\n                            <ion-option value="MA">Maranhão</ion-option>\n                            <ion-option value="MT">Mato Grosso</ion-option>\n                            <ion-option value="MS">Mato Grosso do Sul</ion-option>\n                            <ion-option value="MG">Minas Gerais</ion-option>\n                            <ion-option value="PA">Pará</ion-option>\n                            <ion-option value="PB">Paraíba</ion-option>\n                            <ion-option value="PR">Paraná</ion-option>\n                            <ion-option value="PE">Pernambuco</ion-option>\n                            <ion-option value="PI">Piauí</ion-option>\n                            <ion-option value="RJ">Rio de Janeiro</ion-option>\n                            <ion-option value="RN">Rio Grande do Norte</ion-option>\n                            <ion-option value="RS">Rio Grande do Sul</ion-option>\n                            <ion-option value="RO">Rondônia</ion-option>\n                            <ion-option value="RR">Roraima</ion-option>\n                            <ion-option value="SC">Santa Catarina</ion-option>\n                            <ion-option value="SP">São Paulo</ion-option>\n                            <ion-option value="SE">Sergipe</ion-option>\n                            <ion-option value="TO">Tocantins</ion-option>\n                        </ion-select>-->\n                    </ion-item>\n\n                    <ion-item class="sub-address">\n                        <ion-input type="text" placeholder="CEP" name="cep" id="cep" [(ngModel)]="address.cep" disabled readonly>\n                        </ion-input>\n                    </ion-item>\n\n                </ion-row>\n                <button class="checkOut-btn" ion-button block type="submit" [disabled]="!f.valid">\n                    <ion-icon ios="ios-add" md="md-add"></ion-icon>\n                    &nbsp;&nbsp;Adicionar Endereço\n                </button>\n            </form>\n        </ion-list>\n\n    </div>\n\n</ion-content>'/*ion-inline-end:"E:\Nova pasta\Archive-bkp-300121-mod-a\src\pages\add-endereco\add-endereco.html"*/,
+            selector: 'page-add-endereco',template:/*ion-inline-start:"/Users/Shared/projects/super-horti-app/src/pages/add-endereco/add-endereco.html"*/'<ion-content padding class="transparent-header" [ngStyle]="{\'background-image\': \'url(\' + backgroundImage +\')\'}">\n\n    <div padding>\n\n        <ion-fab top right>\n            <button ion-fab color="verde-escuro" (click)="close(1)">\n                <ion-icon name="md-close"></ion-icon>\n            </button>\n        </ion-fab>\n\n        <ion-list>\n            <form (ngSubmit)="addAddress(f)" #f="ngForm">\n                <ion-label class="add-heading">\n                    <strong>Insira o endereço para entrega</strong>\n                </ion-label>\n                <ion-row class="full-address">\n                    <!--<div class="error">\n                                    <p><sub>Nome é obrigatório</sub></p>\n                                </div>-->\n                    <ion-item>\n                        <ion-input type="text" placeholder="Nome - Obritagório" name="nome" id="nome" [(ngModel)]="address.nome"\n                            required>\n                        </ion-input>\n                    </ion-item>\n\n                    <ion-item>\n                        <ion-input type="text" name="contato" id="contato"\n                            [brmasker]="{mask:\'(00) 00000-0000)\', len:15}" [(ngModel)]="address.contato"\n                            placeholder="Telefone - Obritagório" required></ion-input>\n                    </ion-item>\n\n                    <ion-item class="sub-address">\n                        <ion-input type="text" placeholder="Logradouro" name="endereco" id="endereco"\n                            [(ngModel)]="address.endereco" disabled required></ion-input>\n                    </ion-item>\n\n                    <ion-item>\n                        <ion-input type="text" placeholder="Número - Obritagório" name="numero" id="numero"\n                            [(ngModel)]="address.numero" required></ion-input>\n                    </ion-item>\n\n                    <ion-item>\n                        <ion-input type="text" placeholder="Complemento - Obritagório" name="complemento" id="complemento"\n                            [(ngModel)]="address.complemento" required></ion-input>\n                    </ion-item>\n\n                    <ion-item class="sub-address">\n                        <ion-input type="text" name="bairro" id="bairro" placeholder="Bairro"\n                            [(ngModel)]="address.bairro" disabled required>\n                        </ion-input>\n                    </ion-item>\n\n                    <ion-item class="sub-address">\n                        <ion-input type="text" placeholder="Cidade" name="cidade" id="cidade"\n                            [(ngModel)]="address.cidade" disabled required></ion-input>\n                    </ion-item>\n\n                    <ion-item class="sub-address">\n                        <ion-input type="text" placeholder="Estado" name="estado" id="estado" [(ngModel)]="address.estado" disabled required></ion-input>\n                        <!--<ion-label>Estado</ion-label>-->\n                        <!--<ion-select name="estado" id="estado" [(ngModel)]="address.estado" disabled required>\n                            <ion-option value="AC">Acre</ion-option>\n                            <ion-option value="AL">Alagoas</ion-option>\n                            <ion-option value="AP">Amapá</ion-option>\n                            <ion-option value="AM">Amazonas</ion-option>\n                            <ion-option value="BA">Bahia</ion-option>\n                            <ion-option value="CE">Ceará</ion-option>\n                            <ion-option value="DF">Distrito Federal</ion-option>\n                            <ion-option value="ES">Espírito Santo</ion-option>\n                            <ion-option value="GO">Goiás</ion-option>\n                            <ion-option value="MA">Maranhão</ion-option>\n                            <ion-option value="MT">Mato Grosso</ion-option>\n                            <ion-option value="MS">Mato Grosso do Sul</ion-option>\n                            <ion-option value="MG">Minas Gerais</ion-option>\n                            <ion-option value="PA">Pará</ion-option>\n                            <ion-option value="PB">Paraíba</ion-option>\n                            <ion-option value="PR">Paraná</ion-option>\n                            <ion-option value="PE">Pernambuco</ion-option>\n                            <ion-option value="PI">Piauí</ion-option>\n                            <ion-option value="RJ">Rio de Janeiro</ion-option>\n                            <ion-option value="RN">Rio Grande do Norte</ion-option>\n                            <ion-option value="RS">Rio Grande do Sul</ion-option>\n                            <ion-option value="RO">Rondônia</ion-option>\n                            <ion-option value="RR">Roraima</ion-option>\n                            <ion-option value="SC">Santa Catarina</ion-option>\n                            <ion-option value="SP">São Paulo</ion-option>\n                            <ion-option value="SE">Sergipe</ion-option>\n                            <ion-option value="TO">Tocantins</ion-option>\n                        </ion-select>-->\n                    </ion-item>\n\n                    <ion-item class="sub-address">\n                        <ion-input type="text" placeholder="CEP" name="cep" id="cep" [(ngModel)]="address.cep" disabled readonly>\n                        </ion-input>\n                    </ion-item>\n\n                </ion-row>\n                <button class="checkOut-btn" ion-button block type="submit" [disabled]="!f.valid">\n                    <ion-icon ios="ios-add" md="md-add"></ion-icon>\n                    &nbsp;&nbsp;Adicionar Endereço\n                </button>\n            </form>\n        </ion-list>\n\n    </div>\n\n</ion-content>'/*ion-inline-end:"/Users/Shared/projects/super-horti-app/src/pages/add-endereco/add-endereco.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__angular_fire_auth__["a" /* AngularFireAuth */],
             __WEBPACK_IMPORTED_MODULE_2__angular_fire_database__["a" /* AngularFireDatabase */],
@@ -702,14 +713,14 @@ var AddEnderecoPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 436:
+/***/ 438:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CheckoutPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_fire_auth__ = __webpack_require__(71);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_fire_auth__ = __webpack_require__(70);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_fire_database__ = __webpack_require__(53);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_moment__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_moment__);
@@ -935,7 +946,7 @@ var CheckoutPage = /** @class */ (function () {
     };
     CheckoutPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: "page-checkout",template:/*ion-inline-start:"E:\Nova pasta\Archive-bkp-300121-mod-a\src\pages\checkout\checkout.html"*/'<ion-header>\n    <ion-navbar>\n        <ion-title class="title">Opções de Pagamento\n        </ion-title>\n    </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n    <ion-row class="amount-block">\n        <ion-col col-6>\n            <p class="total"> Total do Pedido\n                <span class="currency"> {{payTotal | currency:\'BRL\':true:\'1.2-2\'}}\n                </span>\n            </p>\n        </ion-col>\n    </ion-row>\n    <ion-list radio-group class="radio-list">\n        \n        <p class="card-title">Escolha uma forma de pagamento</p>\n\n        <ion-list radio-group>\n            <ion-row class="card-type">\n                <ion-col col-12>\n                    <ion-item class="radio-item">\n                        <ion-label>Na Entrega Dinheiro</ion-label>\n                        <ion-radio item-left value="dinheiro" (ionSelect)="choosePaymentType(\'dinheiro\')"></ion-radio>\n                    </ion-item>\n                    \n                    <ion-item class="radio-item" *ngIf="forma_pagamento.tipo == \'dinheiro\'">\n                        <ion-input type="text" name="troco" [(ngModel)]="forma_pagamento.troco" placeholder="Troco para" [brmasker]="{money: true}"></ion-input>\n                    </ion-item>\n                    \n                    <ion-item class="radio-item">\n                        <ion-label>Na Entrega Cartão Crédito</ion-label>\n                        <ion-radio item-left value="cartao_credito" (ionSelect)="choosePaymentType(\'cartao_credito\')"></ion-radio>\n                    </ion-item>\n                    <ion-item class="radio-item">\n                        <ion-label>Na Entrega Cartão Débito</ion-label>\n                        <ion-radio item-left value="cartao_debito" (ionSelect)="choosePaymentType(\'cartao_debito\')"></ion-radio>\n                    </ion-item>\n                    <ion-item class="radio-item">\n                        <ion-label>Transferência Bancária</ion-label>\n                        <ion-radio item-left value="transferencia_bancaria" (ionSelect)="choosePaymentType(\'transferencia_bancaria\')"></ion-radio>\n                    </ion-item>\n\n                    <ion-item class="radio-item">\n                        <ion-input type="text" name="observacoes" [(ngModel)]="forma_pagamento.observacoes" placeholder="Observações" ></ion-input>\n                    </ion-item>\n                </ion-col>\n            </ion-row>\n        </ion-list>\n      \n        <div class="btn-wrapper">\n            <button ion-button full class="btn-lg" type="button" [disabled]="disableButton == false" (click)="onCheckOut()">Concluir o pedido\n            </button>\n        </div>\n        \n    </ion-list>\n\n</ion-content>\n\n<ion-footer class="ion-no-border">\n    <ion-toolbar>\n        <p style="font-size: 12px; text-align: center;" ion-text color="light">\n            Super Horti Comércio de Verduras e Legumes LTDA</p>\n    </ion-toolbar>\n</ion-footer>'/*ion-inline-end:"E:\Nova pasta\Archive-bkp-300121-mod-a\src\pages\checkout\checkout.html"*/
+            selector: "page-checkout",template:/*ion-inline-start:"/Users/Shared/projects/super-horti-app/src/pages/checkout/checkout.html"*/'<ion-header>\n    <ion-navbar>\n        <ion-title class="title">Opções de Pagamento\n        </ion-title>\n    </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n    <ion-row class="amount-block">\n        <ion-col col-6>\n            <p class="total"> Total do Pedido\n                <span class="currency"> {{payTotal | currency:\'BRL\':true:\'1.2-2\'}}\n                </span>\n            </p>\n        </ion-col>\n    </ion-row>\n    <ion-list radio-group class="radio-list">\n        \n        <p class="card-title">Escolha uma forma de pagamento</p>\n\n        <ion-list radio-group>\n            <ion-row class="card-type">\n                <ion-col col-12>\n                    <ion-item class="radio-item">\n                        <ion-label>Na Entrega Dinheiro</ion-label>\n                        <ion-radio item-left value="dinheiro" (ionSelect)="choosePaymentType(\'dinheiro\')"></ion-radio>\n                    </ion-item>\n                    \n                    <ion-item class="radio-item" *ngIf="forma_pagamento.tipo == \'dinheiro\'">\n                        <ion-input type="text" name="troco" [(ngModel)]="forma_pagamento.troco" placeholder="Troco para" [brmasker]="{money: true}"></ion-input>\n                    </ion-item>\n                    \n                    <ion-item class="radio-item">\n                        <ion-label>Na Entrega Cartão Crédito</ion-label>\n                        <ion-radio item-left value="cartao_credito" (ionSelect)="choosePaymentType(\'cartao_credito\')"></ion-radio>\n                    </ion-item>\n                    <ion-item class="radio-item">\n                        <ion-label>Na Entrega Cartão Débito</ion-label>\n                        <ion-radio item-left value="cartao_debito" (ionSelect)="choosePaymentType(\'cartao_debito\')"></ion-radio>\n                    </ion-item>\n                    <ion-item class="radio-item">\n                        <ion-label>Transferência Bancária</ion-label>\n                        <ion-radio item-left value="transferencia_bancaria" (ionSelect)="choosePaymentType(\'transferencia_bancaria\')"></ion-radio>\n                    </ion-item>\n\n                    <ion-item class="radio-item">\n                        <ion-input type="text" name="observacoes" [(ngModel)]="forma_pagamento.observacoes" placeholder="Observações" ></ion-input>\n                    </ion-item>\n                </ion-col>\n            </ion-row>\n        </ion-list>\n      \n        <div class="btn-wrapper">\n            <button ion-button full class="btn-lg" type="button" [disabled]="disableButton == false" (click)="onCheckOut()">Concluir o pedido\n            </button>\n        </div>\n        \n    </ion-list>\n\n</ion-content>\n\n<ion-footer class="ion-no-border">\n    <ion-toolbar>\n        <p style="font-size: 12px; text-align: center;" ion-text color="light">\n            Super Horti Comércio de Verduras e Legumes LTDA</p>\n    </ion-toolbar>\n</ion-footer>'/*ion-inline-end:"/Users/Shared/projects/super-horti-app/src/pages/checkout/checkout.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__angular_fire_auth__["a" /* AngularFireAuth */],
             __WEBPACK_IMPORTED_MODULE_3__angular_fire_database__["a" /* AngularFireDatabase */],
@@ -953,13 +964,13 @@ var CheckoutPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 437:
+/***/ 439:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return InsertCepPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(25);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1010,7 +1021,7 @@ var InsertCepPage = /** @class */ (function () {
     };
     InsertCepPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-insert-cep',template:/*ion-inline-start:"E:\Nova pasta\Archive-bkp-300121-mod-a\src\pages\insert-cep\insert-cep.html"*/'<ion-content padding class="transparent-header" [ngStyle]="{\'background-image\': \'url(\' + backgroundImage +\')\'}">\n\n  <div padding>\n\n    <ion-fab top right>\n      <button ion-fab color="verde-escuro" (click)="cepIn(0)">\n        <ion-icon name="md-close"></ion-icon>\n      </button>\n    </ion-fab>\n\n    <ion-row>\n      <ion-col>\n        <ion-list inset class="no-border">\n\n          <img class="logo" src="assets/img/logo-2.png" />\n\n          <ion-item>\n            <ion-input type="tel" placeholder="Digite seu CEP" [brmasker]="{mask:\'00.000-000\', len:10}" #cep>\n            </ion-input>\n          </ion-item>\n\n        </ion-list>\n      </ion-col>\n    </ion-row>\n\n    <ion-row>\n      <ion-col>\n        <button class="login-btn" (click)="cepIn(cep.value)" type="submit" ion-button>ENVIAR</button>\n      </ion-col>\n    </ion-row>\n\n  </div>\n\n</ion-content>'/*ion-inline-end:"E:\Nova pasta\Archive-bkp-300121-mod-a\src\pages\insert-cep\insert-cep.html"*/,
+            selector: 'page-insert-cep',template:/*ion-inline-start:"/Users/Shared/projects/super-horti-app/src/pages/insert-cep/insert-cep.html"*/'<ion-content padding class="transparent-header" [ngStyle]="{\'background-image\': \'url(\' + backgroundImage +\')\'}">\n\n  <div padding>\n\n    <ion-fab top right>\n      <button ion-fab color="verde-escuro" (click)="cepIn(0)">\n        <ion-icon name="md-close"></ion-icon>\n      </button>\n    </ion-fab>\n\n    <ion-row>\n      <ion-col>\n        <ion-list inset class="no-border">\n\n          <img class="logo" src="assets/img/logo-2.png" />\n\n          <ion-item>\n            <ion-input type="tel" placeholder="Digite seu CEP" [brmasker]="{mask:\'00.000-000\', len:10}" #cep>\n            </ion-input>\n          </ion-item>\n\n        </ion-list>\n      </ion-col>\n    </ion-row>\n\n    <ion-row>\n      <ion-col>\n        <button class="login-btn" (click)="cepIn(cep.value)" type="submit" ion-button>ENVIAR</button>\n      </ion-col>\n    </ion-row>\n\n  </div>\n\n</ion-content>'/*ion-inline-end:"/Users/Shared/projects/super-horti-app/src/pages/insert-cep/insert-cep.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavController"],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavParams"],
@@ -1024,13 +1035,13 @@ var InsertCepPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 439:
+/***/ 441:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Common; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(25);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1082,7 +1093,7 @@ var Common = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 440:
+/***/ 442:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1091,7 +1102,7 @@ var Common = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(88);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(89);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(25);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1140,7 +1151,7 @@ var SpinnerProvider = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 441:
+/***/ 443:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1208,7 +1219,7 @@ var MapProvider = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 442:
+/***/ 444:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1284,14 +1295,14 @@ var CartService = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 444:
+/***/ 446:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(445);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(447);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_module__ = __webpack_require__(570);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_module__ = __webpack_require__(573);
 
 
 
@@ -1301,42 +1312,42 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 570:
+/***/ 573:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(427);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(428);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(429);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(430);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__(88);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(642);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(645);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_fire__ = __webpack_require__(140);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__angular_fire_auth__ = __webpack_require__(71);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__angular_fire_auth__ = __webpack_require__(70);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__angular_fire_database__ = __webpack_require__(53);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__angular_common_http__ = __webpack_require__(643);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__angular_platform_browser__ = __webpack_require__(43);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_firebase_storage__ = __webpack_require__(443);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ionic_native_date_picker__ = __webpack_require__(648);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__angular_common_http__ = __webpack_require__(646);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__angular_platform_browser__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_firebase_storage__ = __webpack_require__(445);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ionic_native_date_picker__ = __webpack_require__(651);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__providers_auth_service_auth_service__ = __webpack_require__(96);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__firebase_config__ = __webpack_require__(649);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_cart_service__ = __webpack_require__(442);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__firebase_config__ = __webpack_require__(652);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_cart_service__ = __webpack_require__(444);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__ionic_native_social_sharing__ = __webpack_require__(166);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__providers_firebase_service_firebase_service__ = __webpack_require__(432);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__providers_common__ = __webpack_require__(439);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19_brmasker_ionic_3__ = __webpack_require__(650);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20_ion2_calendar__ = __webpack_require__(438);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__providers_firebase_service_firebase_service__ = __webpack_require__(434);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__providers_common__ = __webpack_require__(441);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19_brmasker_ionic_3__ = __webpack_require__(653);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20_ion2_calendar__ = __webpack_require__(440);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20_ion2_calendar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_20_ion2_calendar__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_insert_cep_insert_cep__ = __webpack_require__(437);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_checkout_checkout__ = __webpack_require__(436);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_add_endereco_add_endereco__ = __webpack_require__(434);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_insert_cep_insert_cep__ = __webpack_require__(439);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_checkout_checkout__ = __webpack_require__(438);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_add_endereco_add_endereco__ = __webpack_require__(436);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__ionic_native_geolocation__ = __webpack_require__(167);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__providers_spinner_spinner__ = __webpack_require__(440);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__providers_map_map__ = __webpack_require__(441);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__providers_spinner_spinner__ = __webpack_require__(442);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__providers_map_map__ = __webpack_require__(443);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__ionic_native_native_geocoder__ = __webpack_require__(168);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__pages_google_maps_geolocalizacao_google_maps_geolocalizacao__ = __webpack_require__(433);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__ionic_native_diagnostic__ = __webpack_require__(387);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__pages_google_maps_geolocalizacao_google_maps_geolocalizacao__ = __webpack_require__(435);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__ionic_native_diagnostic__ = __webpack_require__(389);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1457,7 +1468,7 @@ var AppModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 620:
+/***/ 623:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
@@ -1486,247 +1497,251 @@ var map = {
 	"./bm": 261,
 	"./bm.js": 261,
 	"./bn": 262,
+	"./bn-bd": 263,
+	"./bn-bd.js": 263,
 	"./bn.js": 262,
-	"./bo": 263,
-	"./bo.js": 263,
-	"./br": 264,
-	"./br.js": 264,
-	"./bs": 265,
-	"./bs.js": 265,
-	"./ca": 266,
-	"./ca.js": 266,
-	"./cs": 267,
-	"./cs.js": 267,
-	"./cv": 268,
-	"./cv.js": 268,
-	"./cy": 269,
-	"./cy.js": 269,
-	"./da": 270,
-	"./da.js": 270,
-	"./de": 271,
-	"./de-at": 272,
-	"./de-at.js": 272,
-	"./de-ch": 273,
-	"./de-ch.js": 273,
-	"./de.js": 271,
-	"./dv": 274,
-	"./dv.js": 274,
-	"./el": 275,
-	"./el.js": 275,
-	"./en-au": 276,
-	"./en-au.js": 276,
-	"./en-ca": 277,
-	"./en-ca.js": 277,
-	"./en-gb": 278,
-	"./en-gb.js": 278,
-	"./en-ie": 279,
-	"./en-ie.js": 279,
-	"./en-il": 280,
-	"./en-il.js": 280,
-	"./en-in": 281,
-	"./en-in.js": 281,
-	"./en-nz": 282,
-	"./en-nz.js": 282,
-	"./en-sg": 283,
-	"./en-sg.js": 283,
-	"./eo": 284,
-	"./eo.js": 284,
-	"./es": 285,
-	"./es-do": 286,
-	"./es-do.js": 286,
-	"./es-us": 287,
-	"./es-us.js": 287,
-	"./es.js": 285,
-	"./et": 288,
-	"./et.js": 288,
-	"./eu": 289,
-	"./eu.js": 289,
-	"./fa": 290,
-	"./fa.js": 290,
-	"./fi": 291,
-	"./fi.js": 291,
-	"./fil": 292,
-	"./fil.js": 292,
-	"./fo": 293,
-	"./fo.js": 293,
-	"./fr": 294,
-	"./fr-ca": 295,
-	"./fr-ca.js": 295,
-	"./fr-ch": 296,
-	"./fr-ch.js": 296,
-	"./fr.js": 294,
-	"./fy": 297,
-	"./fy.js": 297,
-	"./ga": 298,
-	"./ga.js": 298,
-	"./gd": 299,
-	"./gd.js": 299,
-	"./gl": 300,
-	"./gl.js": 300,
-	"./gom-deva": 301,
-	"./gom-deva.js": 301,
-	"./gom-latn": 302,
-	"./gom-latn.js": 302,
-	"./gu": 303,
-	"./gu.js": 303,
-	"./he": 304,
-	"./he.js": 304,
-	"./hi": 305,
-	"./hi.js": 305,
-	"./hr": 306,
-	"./hr.js": 306,
-	"./hu": 307,
-	"./hu.js": 307,
-	"./hy-am": 308,
-	"./hy-am.js": 308,
-	"./id": 309,
-	"./id.js": 309,
-	"./is": 310,
-	"./is.js": 310,
-	"./it": 311,
-	"./it-ch": 312,
-	"./it-ch.js": 312,
-	"./it.js": 311,
-	"./ja": 313,
-	"./ja.js": 313,
-	"./jv": 314,
-	"./jv.js": 314,
-	"./ka": 315,
-	"./ka.js": 315,
-	"./kk": 316,
-	"./kk.js": 316,
-	"./km": 317,
-	"./km.js": 317,
-	"./kn": 318,
-	"./kn.js": 318,
-	"./ko": 319,
-	"./ko.js": 319,
-	"./ku": 320,
-	"./ku.js": 320,
-	"./ky": 321,
-	"./ky.js": 321,
-	"./lb": 322,
-	"./lb.js": 322,
-	"./lo": 323,
-	"./lo.js": 323,
-	"./lt": 324,
-	"./lt.js": 324,
-	"./lv": 325,
-	"./lv.js": 325,
-	"./me": 326,
-	"./me.js": 326,
-	"./mi": 327,
-	"./mi.js": 327,
-	"./mk": 328,
-	"./mk.js": 328,
-	"./ml": 329,
-	"./ml.js": 329,
-	"./mn": 330,
-	"./mn.js": 330,
-	"./mr": 331,
-	"./mr.js": 331,
-	"./ms": 332,
-	"./ms-my": 333,
-	"./ms-my.js": 333,
-	"./ms.js": 332,
-	"./mt": 334,
-	"./mt.js": 334,
-	"./my": 335,
-	"./my.js": 335,
-	"./nb": 336,
-	"./nb.js": 336,
-	"./ne": 337,
-	"./ne.js": 337,
-	"./nl": 338,
-	"./nl-be": 339,
-	"./nl-be.js": 339,
-	"./nl.js": 338,
-	"./nn": 340,
-	"./nn.js": 340,
-	"./oc-lnc": 341,
-	"./oc-lnc.js": 341,
-	"./pa-in": 342,
-	"./pa-in.js": 342,
-	"./pl": 343,
-	"./pl.js": 343,
-	"./pt": 344,
-	"./pt-br": 345,
-	"./pt-br.js": 345,
-	"./pt.js": 344,
-	"./ro": 346,
-	"./ro.js": 346,
-	"./ru": 347,
-	"./ru.js": 347,
-	"./sd": 348,
-	"./sd.js": 348,
-	"./se": 349,
-	"./se.js": 349,
-	"./si": 350,
-	"./si.js": 350,
-	"./sk": 351,
-	"./sk.js": 351,
-	"./sl": 352,
-	"./sl.js": 352,
-	"./sq": 353,
-	"./sq.js": 353,
-	"./sr": 354,
-	"./sr-cyrl": 355,
-	"./sr-cyrl.js": 355,
-	"./sr.js": 354,
-	"./ss": 356,
-	"./ss.js": 356,
-	"./sv": 357,
-	"./sv.js": 357,
-	"./sw": 358,
-	"./sw.js": 358,
-	"./ta": 359,
-	"./ta.js": 359,
-	"./te": 360,
-	"./te.js": 360,
-	"./tet": 361,
-	"./tet.js": 361,
-	"./tg": 362,
-	"./tg.js": 362,
-	"./th": 363,
-	"./th.js": 363,
-	"./tk": 364,
-	"./tk.js": 364,
-	"./tl-ph": 365,
-	"./tl-ph.js": 365,
-	"./tlh": 366,
-	"./tlh.js": 366,
-	"./tr": 367,
-	"./tr.js": 367,
-	"./tzl": 368,
-	"./tzl.js": 368,
-	"./tzm": 369,
-	"./tzm-latn": 370,
-	"./tzm-latn.js": 370,
-	"./tzm.js": 369,
-	"./ug-cn": 371,
-	"./ug-cn.js": 371,
-	"./uk": 372,
-	"./uk.js": 372,
-	"./ur": 373,
-	"./ur.js": 373,
-	"./uz": 374,
-	"./uz-latn": 375,
-	"./uz-latn.js": 375,
-	"./uz.js": 374,
-	"./vi": 376,
-	"./vi.js": 376,
-	"./x-pseudo": 377,
-	"./x-pseudo.js": 377,
-	"./yo": 378,
-	"./yo.js": 378,
-	"./zh-cn": 379,
-	"./zh-cn.js": 379,
-	"./zh-hk": 380,
-	"./zh-hk.js": 380,
-	"./zh-mo": 381,
-	"./zh-mo.js": 381,
-	"./zh-tw": 382,
-	"./zh-tw.js": 382
+	"./bo": 264,
+	"./bo.js": 264,
+	"./br": 265,
+	"./br.js": 265,
+	"./bs": 266,
+	"./bs.js": 266,
+	"./ca": 267,
+	"./ca.js": 267,
+	"./cs": 268,
+	"./cs.js": 268,
+	"./cv": 269,
+	"./cv.js": 269,
+	"./cy": 270,
+	"./cy.js": 270,
+	"./da": 271,
+	"./da.js": 271,
+	"./de": 272,
+	"./de-at": 273,
+	"./de-at.js": 273,
+	"./de-ch": 274,
+	"./de-ch.js": 274,
+	"./de.js": 272,
+	"./dv": 275,
+	"./dv.js": 275,
+	"./el": 276,
+	"./el.js": 276,
+	"./en-au": 277,
+	"./en-au.js": 277,
+	"./en-ca": 278,
+	"./en-ca.js": 278,
+	"./en-gb": 279,
+	"./en-gb.js": 279,
+	"./en-ie": 280,
+	"./en-ie.js": 280,
+	"./en-il": 281,
+	"./en-il.js": 281,
+	"./en-in": 282,
+	"./en-in.js": 282,
+	"./en-nz": 283,
+	"./en-nz.js": 283,
+	"./en-sg": 284,
+	"./en-sg.js": 284,
+	"./eo": 285,
+	"./eo.js": 285,
+	"./es": 286,
+	"./es-do": 287,
+	"./es-do.js": 287,
+	"./es-mx": 288,
+	"./es-mx.js": 288,
+	"./es-us": 289,
+	"./es-us.js": 289,
+	"./es.js": 286,
+	"./et": 290,
+	"./et.js": 290,
+	"./eu": 291,
+	"./eu.js": 291,
+	"./fa": 292,
+	"./fa.js": 292,
+	"./fi": 293,
+	"./fi.js": 293,
+	"./fil": 294,
+	"./fil.js": 294,
+	"./fo": 295,
+	"./fo.js": 295,
+	"./fr": 296,
+	"./fr-ca": 297,
+	"./fr-ca.js": 297,
+	"./fr-ch": 298,
+	"./fr-ch.js": 298,
+	"./fr.js": 296,
+	"./fy": 299,
+	"./fy.js": 299,
+	"./ga": 300,
+	"./ga.js": 300,
+	"./gd": 301,
+	"./gd.js": 301,
+	"./gl": 302,
+	"./gl.js": 302,
+	"./gom-deva": 303,
+	"./gom-deva.js": 303,
+	"./gom-latn": 304,
+	"./gom-latn.js": 304,
+	"./gu": 305,
+	"./gu.js": 305,
+	"./he": 306,
+	"./he.js": 306,
+	"./hi": 307,
+	"./hi.js": 307,
+	"./hr": 308,
+	"./hr.js": 308,
+	"./hu": 309,
+	"./hu.js": 309,
+	"./hy-am": 310,
+	"./hy-am.js": 310,
+	"./id": 311,
+	"./id.js": 311,
+	"./is": 312,
+	"./is.js": 312,
+	"./it": 313,
+	"./it-ch": 314,
+	"./it-ch.js": 314,
+	"./it.js": 313,
+	"./ja": 315,
+	"./ja.js": 315,
+	"./jv": 316,
+	"./jv.js": 316,
+	"./ka": 317,
+	"./ka.js": 317,
+	"./kk": 318,
+	"./kk.js": 318,
+	"./km": 319,
+	"./km.js": 319,
+	"./kn": 320,
+	"./kn.js": 320,
+	"./ko": 321,
+	"./ko.js": 321,
+	"./ku": 322,
+	"./ku.js": 322,
+	"./ky": 323,
+	"./ky.js": 323,
+	"./lb": 324,
+	"./lb.js": 324,
+	"./lo": 325,
+	"./lo.js": 325,
+	"./lt": 326,
+	"./lt.js": 326,
+	"./lv": 327,
+	"./lv.js": 327,
+	"./me": 328,
+	"./me.js": 328,
+	"./mi": 329,
+	"./mi.js": 329,
+	"./mk": 330,
+	"./mk.js": 330,
+	"./ml": 331,
+	"./ml.js": 331,
+	"./mn": 332,
+	"./mn.js": 332,
+	"./mr": 333,
+	"./mr.js": 333,
+	"./ms": 334,
+	"./ms-my": 335,
+	"./ms-my.js": 335,
+	"./ms.js": 334,
+	"./mt": 336,
+	"./mt.js": 336,
+	"./my": 337,
+	"./my.js": 337,
+	"./nb": 338,
+	"./nb.js": 338,
+	"./ne": 339,
+	"./ne.js": 339,
+	"./nl": 340,
+	"./nl-be": 341,
+	"./nl-be.js": 341,
+	"./nl.js": 340,
+	"./nn": 342,
+	"./nn.js": 342,
+	"./oc-lnc": 343,
+	"./oc-lnc.js": 343,
+	"./pa-in": 344,
+	"./pa-in.js": 344,
+	"./pl": 345,
+	"./pl.js": 345,
+	"./pt": 346,
+	"./pt-br": 347,
+	"./pt-br.js": 347,
+	"./pt.js": 346,
+	"./ro": 348,
+	"./ro.js": 348,
+	"./ru": 349,
+	"./ru.js": 349,
+	"./sd": 350,
+	"./sd.js": 350,
+	"./se": 351,
+	"./se.js": 351,
+	"./si": 352,
+	"./si.js": 352,
+	"./sk": 353,
+	"./sk.js": 353,
+	"./sl": 354,
+	"./sl.js": 354,
+	"./sq": 355,
+	"./sq.js": 355,
+	"./sr": 356,
+	"./sr-cyrl": 357,
+	"./sr-cyrl.js": 357,
+	"./sr.js": 356,
+	"./ss": 358,
+	"./ss.js": 358,
+	"./sv": 359,
+	"./sv.js": 359,
+	"./sw": 360,
+	"./sw.js": 360,
+	"./ta": 361,
+	"./ta.js": 361,
+	"./te": 362,
+	"./te.js": 362,
+	"./tet": 363,
+	"./tet.js": 363,
+	"./tg": 364,
+	"./tg.js": 364,
+	"./th": 365,
+	"./th.js": 365,
+	"./tk": 366,
+	"./tk.js": 366,
+	"./tl-ph": 367,
+	"./tl-ph.js": 367,
+	"./tlh": 368,
+	"./tlh.js": 368,
+	"./tr": 369,
+	"./tr.js": 369,
+	"./tzl": 370,
+	"./tzl.js": 370,
+	"./tzm": 371,
+	"./tzm-latn": 372,
+	"./tzm-latn.js": 372,
+	"./tzm.js": 371,
+	"./ug-cn": 373,
+	"./ug-cn.js": 373,
+	"./uk": 374,
+	"./uk.js": 374,
+	"./ur": 375,
+	"./ur.js": 375,
+	"./uz": 376,
+	"./uz-latn": 377,
+	"./uz-latn.js": 377,
+	"./uz.js": 376,
+	"./vi": 378,
+	"./vi.js": 378,
+	"./x-pseudo": 379,
+	"./x-pseudo.js": 379,
+	"./yo": 380,
+	"./yo.js": 380,
+	"./zh-cn": 381,
+	"./zh-cn.js": 381,
+	"./zh-hk": 382,
+	"./zh-hk.js": 382,
+	"./zh-mo": 383,
+	"./zh-mo.js": 383,
+	"./zh-tw": 384,
+	"./zh-tw.js": 384
 };
 function webpackContext(req) {
 	return __webpack_require__(webpackContextResolve(req));
@@ -1742,20 +1757,20 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 620;
+webpackContext.id = 623;
 
 /***/ }),
 
-/***/ 642:
+/***/ 645:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(427);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(428);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_fire_auth__ = __webpack_require__(71);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(429);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(430);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_fire_auth__ = __webpack_require__(70);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_fire_database__ = __webpack_require__(53);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_social_sharing__ = __webpack_require__(166);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -1960,7 +1975,7 @@ var MyApp = /** @class */ (function () {
         __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["Nav"])
     ], MyApp.prototype, "nav", void 0);
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({template:/*ion-inline-start:"E:\Nova pasta\Archive-bkp-300121-mod-a\src\app\app.html"*/'<ion-menu persistent="true" class="menu" [content]="content" *ngIf="this.platform.dir()===\'ltr\'" side="left">\n  \n  <ion-content class="sidebar-menu">\n    <ion-row class="img-name-row">\n      <ion-col>\n        <img class="user-img" src="{{imageUrl}}">\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col *ngIf="isLoggedin()">\n        <p class="user-name">{{name | uppercase}}</p>\n      </ion-col>\n    </ion-row>\n\n    <button menuClose class="menu-item" ion-item (click)="home()">\n      <ion-icon name="home" item-left></ion-icon>\n      Home\n    </button>\n    <button menuClose class="menu-item" ion-item (click)="catagory()">\n      <ion-icon name="apps" item-left></ion-icon>\n      Categorias\n    </button>\n    <!--<button *ngIf="isCart()" menuClose class="menu-item" ion-item (click)="offer()">\n      <ion-icon name="pricetag" item-left></ion-icon>\n      {{\'Ofertas\'| translate}}\n      <ion-badge class="menu-badge">{{noOfItemsInOffer}}</ion-badge>\n    </button>-->\n    <button menuClose class="menu-item" ion-item (click)="addToCart()">\n      <ion-icon name="cart" item-left></ion-icon>\n      Meu Carrinho\n      <ion-badge class="menu-badge">{{noOfItemsInCart}}</ion-badge>\n    </button>\n    <button *ngIf="isLoggedin()" menuClose class="menu-item" ion-item (click)="yourOrders()">\n      <ion-icon name="md-list-box" item-left></ion-icon>\n      Meus Pedidos\n    </button>\n    <button *ngIf="isLoggedin()" menuClose class="menu-item" ion-item (click)="ordersSchedule()">\n      <ion-icon name="timer" item-left></ion-icon>\n      Meus Pedidos Agendados\n    </button>\n\n    <button *ngIf="isLoggedin()" menuClose class="menu-item" ion-item (click)="settings()">\n      <ion-icon name="settings" item-left></ion-icon>\n      Meus Dados\n    </button>\n\n    <button *ngIf="isLoggedin()" menuClose class="menu-item" ion-item (click)="meusEnderecos()">\n      <ion-icon name="md-pin" item-left></ion-icon>\n      Meus Endereços\n    </button>\n\n    <button menuClose class="menu-item" ion-item (click)="aboutUs()">\n      <ion-icon name="contacts" item-left></ion-icon>\n      Sobre Nós\n    </button>\n\n    <!--<button menuClose class="menu-item" ion-item (click)="contact()">\n      <ion-icon name="call" item-left></ion-icon>\n      Contato\n    </button>-->\n\n    <button *ngIf="!isLoggedin()" menuClose class="menu-item" ion-item (click)="login()">\n      <ion-icon name="log-in" item-left></ion-icon>\n      Entrar\n    </button>\n    <button *ngIf="isLoggedin()" ion-item (click)="logout()" menuClose class="menu-item">\n      <ion-icon name="log-out" item-left></ion-icon>\n      Sair\n    </button>\n  </ion-content>\n\n  <ion-footer>\n    <p style="font-size: 12px; text-align: center;" ion-text color="light">26.665.619/0001-09<br>\n      Super Horti Comércio de Verduras e Legumes LTDA</p>\n  </ion-footer>\n\n</ion-menu>\n\n<ion-menu persistent="true" class="menu" [content]="content" *ngIf="this.platform.dir()===\'rtl\'" side="right">\n  <ion-content class="sidebar-menu">\n    <ion-row class="img-name-row">\n      <ion-col>\n        <img class="user-img" src="{{imageUrl}}">\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col *ngIf="isLoggedin()">\n        <p class="user-name">{{name}}</p>\n      </ion-col>\n    </ion-row>\n\n    <button menuClose class="menu-item" ion-item (click)="home()">\n      <ion-icon name="home" item-left></ion-icon>\n     Home\n    </button>\n    <button menuClose class="menu-item" ion-item (click)="catagory()">\n      <ion-icon name="apps" item-left></ion-icon>\n      Categorias\n    </button>\n    <!--<button *ngIf="isCart()" menuClose class="menu-item" ion-item (click)="offer()">\n      <ion-icon name="pricetag" item-left></ion-icon>\n      {{\'Ofertas\'| translate}}\n      <ion-badge class="menu-badge">{{noOfItemsInOffer}}</ion-badge>\n    </button>-->\n    <button menuClose class="menu-item" ion-item (click)="addToCart()">\n      <ion-icon name="cart" item-left></ion-icon>\n      Meu Carinho\n      <ion-badge class="menu-badge">{{noOfItemsInCart}}</ion-badge>\n    </button>\n    <button *ngIf="isLoggedin()" menuClose class="menu-item" ion-item (click)="yourOrders()">\n      <ion-icon name="timer" item-left></ion-icon>\n      Meus Pedidos\n    </button>\n    <button *ngIf="isLoggedin()" menuClose class="menu-item" ion-item (click)="ordersSchedule()">\n      <ion-icon name="timer" item-left></ion-icon>\n      Meus Pedidos Agendados\n    </button>\n\n    <button *ngIf="isLoggedin()" menuClose class="menu-item" ion-item (click)="settings()">\n      <ion-icon name="settings" item-left></ion-icon>\n      Configurações\n    </button>\n\n    <button menuClose class="menu-item" ion-item (click)="aboutUs()">\n      <ion-icon name="contacts" item-left></ion-icon>\n      Sobre Nós\n    </button>\n\n    <!--<button menuClose class="menu-item" ion-item (click)="contact()">\n      <ion-icon name="call" item-left></ion-icon>\n      Contato\n    </button>-->\n\n    <button *ngIf="!isLoggedin()" menuClose class="menu-item" ion-item (click)="login()">\n      <ion-icon name="log-in" item-left></ion-icon>\n      Entrar\n    </button>\n    <button *ngIf="isLoggedin()" ion-item (click)="logout()" menuClose class="menu-item">\n      <ion-icon name="log-out" item-left></ion-icon>\n      Sair\n    </button>\n  \n  </ion-content>\n\n  <ion-footer>\n    <p style="font-size: 12px; text-align: center;" ion-text color="light">26.665.619/0001-09<br>\n      Super Horti Comércio de Verduras e Legumes LTDA</p>\n  </ion-footer>\n\n</ion-menu>\n\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>\n\n<!--<ion-footer class="hide-on-keyboard-open ion-no-border">-->\n<!--<ion-footer class="ion-no-border">-->\n  <!--<ion-toolbar>\n      <p style="font-size: 12px; text-align: center;" ion-text color="light">26.665.619/0001-09<br>\n      Super Horti Comércio de Verduras e Legumes LTDA</p>\n      <br>\n  </ion-toolbar>\n</ion-footer>-->'/*ion-inline-end:"E:\Nova pasta\Archive-bkp-300121-mod-a\src\app\app.html"*/,
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({template:/*ion-inline-start:"/Users/Shared/projects/super-horti-app/src/app/app.html"*/'<ion-menu persistent="true" class="menu" [content]="content" *ngIf="this.platform.dir()===\'ltr\'" side="left">\n  \n  <ion-content class="sidebar-menu">\n    <ion-row class="img-name-row">\n      <ion-col>\n        <img class="user-img" src="{{imageUrl}}">\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col *ngIf="isLoggedin()">\n        <p class="user-name">{{name | uppercase}}</p>\n      </ion-col>\n    </ion-row>\n\n    <button menuClose class="menu-item" ion-item (click)="home()">\n      <ion-icon name="home" item-left></ion-icon>\n      Home\n    </button>\n    <button menuClose class="menu-item" ion-item (click)="catagory()">\n      <ion-icon name="apps" item-left></ion-icon>\n      Categorias\n    </button>\n    <!--<button *ngIf="isCart()" menuClose class="menu-item" ion-item (click)="offer()">\n      <ion-icon name="pricetag" item-left></ion-icon>\n      {{\'Ofertas\'| translate}}\n      <ion-badge class="menu-badge">{{noOfItemsInOffer}}</ion-badge>\n    </button>-->\n    <button menuClose class="menu-item" ion-item (click)="addToCart()">\n      <ion-icon name="cart" item-left></ion-icon>\n      Meu Carrinho\n      <ion-badge class="menu-badge">{{noOfItemsInCart}}</ion-badge>\n    </button>\n    <button *ngIf="isLoggedin()" menuClose class="menu-item" ion-item (click)="yourOrders()">\n      <ion-icon name="md-list-box" item-left></ion-icon>\n      Meus Pedidos\n    </button>\n    <button *ngIf="isLoggedin()" menuClose class="menu-item" ion-item (click)="ordersSchedule()">\n      <ion-icon name="timer" item-left></ion-icon>\n      Meus Pedidos Agendados\n    </button>\n\n    <button *ngIf="isLoggedin()" menuClose class="menu-item" ion-item (click)="settings()">\n      <ion-icon name="settings" item-left></ion-icon>\n      Meus Dados\n    </button>\n\n    <button *ngIf="isLoggedin()" menuClose class="menu-item" ion-item (click)="meusEnderecos()">\n      <ion-icon name="md-pin" item-left></ion-icon>\n      Meus Endereços\n    </button>\n\n    <button menuClose class="menu-item" ion-item (click)="aboutUs()">\n      <ion-icon name="contacts" item-left></ion-icon>\n      Sobre Nós\n    </button>\n\n    <!--<button menuClose class="menu-item" ion-item (click)="contact()">\n      <ion-icon name="call" item-left></ion-icon>\n      Contato\n    </button>-->\n\n    <button *ngIf="!isLoggedin()" menuClose class="menu-item" ion-item (click)="login()">\n      <ion-icon name="log-in" item-left></ion-icon>\n      Entrar\n    </button>\n    <button *ngIf="isLoggedin()" ion-item (click)="logout()" menuClose class="menu-item">\n      <ion-icon name="log-out" item-left></ion-icon>\n      Sair\n    </button>\n  </ion-content>\n\n  <ion-footer>\n    <p style="font-size: 12px; text-align: center;" ion-text color="light">26.665.619/0001-09<br>\n      Super Horti Comércio de Verduras e Legumes LTDA</p>\n  </ion-footer>\n\n</ion-menu>\n\n<ion-menu persistent="true" class="menu" [content]="content" *ngIf="this.platform.dir()===\'rtl\'" side="right">\n  <ion-content class="sidebar-menu">\n    <ion-row class="img-name-row">\n      <ion-col>\n        <img class="user-img" src="{{imageUrl}}">\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col *ngIf="isLoggedin()">\n        <p class="user-name">{{name}}</p>\n      </ion-col>\n    </ion-row>\n\n    <button menuClose class="menu-item" ion-item (click)="home()">\n      <ion-icon name="home" item-left></ion-icon>\n     Home\n    </button>\n    <button menuClose class="menu-item" ion-item (click)="catagory()">\n      <ion-icon name="apps" item-left></ion-icon>\n      Categorias\n    </button>\n    <!--<button *ngIf="isCart()" menuClose class="menu-item" ion-item (click)="offer()">\n      <ion-icon name="pricetag" item-left></ion-icon>\n      {{\'Ofertas\'| translate}}\n      <ion-badge class="menu-badge">{{noOfItemsInOffer}}</ion-badge>\n    </button>-->\n    <button menuClose class="menu-item" ion-item (click)="addToCart()">\n      <ion-icon name="cart" item-left></ion-icon>\n      Meu Carinho\n      <ion-badge class="menu-badge">{{noOfItemsInCart}}</ion-badge>\n    </button>\n    <button *ngIf="isLoggedin()" menuClose class="menu-item" ion-item (click)="yourOrders()">\n      <ion-icon name="timer" item-left></ion-icon>\n      Meus Pedidos\n    </button>\n    <button *ngIf="isLoggedin()" menuClose class="menu-item" ion-item (click)="ordersSchedule()">\n      <ion-icon name="timer" item-left></ion-icon>\n      Meus Pedidos Agendados\n    </button>\n\n    <button *ngIf="isLoggedin()" menuClose class="menu-item" ion-item (click)="settings()">\n      <ion-icon name="settings" item-left></ion-icon>\n      Configurações\n    </button>\n\n    <button menuClose class="menu-item" ion-item (click)="aboutUs()">\n      <ion-icon name="contacts" item-left></ion-icon>\n      Sobre Nós\n    </button>\n\n    <!--<button menuClose class="menu-item" ion-item (click)="contact()">\n      <ion-icon name="call" item-left></ion-icon>\n      Contato\n    </button>-->\n\n    <button *ngIf="!isLoggedin()" menuClose class="menu-item" ion-item (click)="login()">\n      <ion-icon name="log-in" item-left></ion-icon>\n      Entrar\n    </button>\n    <button *ngIf="isLoggedin()" ion-item (click)="logout()" menuClose class="menu-item">\n      <ion-icon name="log-out" item-left></ion-icon>\n      Sair\n    </button>\n  \n  </ion-content>\n\n  <ion-footer>\n    <p style="font-size: 12px; text-align: center;" ion-text color="light">26.665.619/0001-09<br>\n      Super Horti Comércio de Verduras e Legumes LTDA</p>\n  </ion-footer>\n\n</ion-menu>\n\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>\n\n<!--<ion-footer class="hide-on-keyboard-open ion-no-border">-->\n<!--<ion-footer class="ion-no-border">-->\n  <!--<ion-toolbar>\n      <p style="font-size: 12px; text-align: center;" ion-text color="light">26.665.619/0001-09<br>\n      Super Horti Comércio de Verduras e Legumes LTDA</p>\n      <br>\n  </ion-toolbar>\n</ion-footer>-->'/*ion-inline-end:"/Users/Shared/projects/super-horti-app/src/app/app.html"*/,
             selector: "MyApp",
             providers: [__WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */], __WEBPACK_IMPORTED_MODULE_6__ionic_native_social_sharing__["a" /* SocialSharing */]]
         }),
@@ -1979,7 +1994,7 @@ var MyApp = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 649:
+/***/ 652:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2061,5 +2076,5 @@ var AuthServiceProvider = /** @class */ (function () {
 
 /***/ })
 
-},[444]);
+},[446]);
 //# sourceMappingURL=main.js.map

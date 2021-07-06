@@ -1,16 +1,16 @@
 webpackJsonp([5],{
 
-/***/ 673:
+/***/ 676:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SettingsModule", function() { return SettingsModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__settings__ = __webpack_require__(789);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_pipes_module__ = __webpack_require__(676);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_firebase_storage__ = __webpack_require__(443);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__settings__ = __webpack_require__(792);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_pipes_module__ = __webpack_require__(679);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_firebase_storage__ = __webpack_require__(445);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -39,14 +39,14 @@ var SettingsModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 676:
+/***/ 679:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PipesModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_pipe__ = __webpack_require__(677);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(678);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_pipe__ = __webpack_require__(680);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(681);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -73,7 +73,7 @@ var PipesModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 677:
+/***/ 680:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -108,7 +108,7 @@ var AppPipe = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 678:
+/***/ 681:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -128,21 +128,21 @@ var AppPipe = /** @class */ (function () {
 /* unused harmony export TranslateDirective */
 /* unused harmony export TranslatePipe */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_of__ = __webpack_require__(431);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_of__ = __webpack_require__(433);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_observable_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__(47);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operators_share__ = __webpack_require__(679);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operators_share__ = __webpack_require__(682);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operators_share___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_operators_share__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operators_map__ = __webpack_require__(681);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operators_map__ = __webpack_require__(684);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operators_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_operators_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_operators_merge__ = __webpack_require__(683);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_operators_merge__ = __webpack_require__(686);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_operators_merge___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_operators_merge__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_operators_switchMap__ = __webpack_require__(685);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_operators_switchMap__ = __webpack_require__(688);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_operators_switchMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_operators_switchMap__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_operators_toArray__ = __webpack_require__(687);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_operators_toArray__ = __webpack_require__(690);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_operators_toArray___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_rxjs_operators_toArray__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_operators_take__ = __webpack_require__(689);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_operators_take__ = __webpack_require__(692);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_operators_take___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_rxjs_operators_take__);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
@@ -4002,55 +4002,17 @@ var TranslateModule_1;
 
 /***/ }),
 
-/***/ 679:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-function __export(m) {
-    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-}
-Object.defineProperty(exports, "__esModule", { value: true });
-__export(__webpack_require__(680));
-//# sourceMappingURL=share.js.map
-
-/***/ }),
-
-/***/ 680:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", { value: true });
-var operators_1 = __webpack_require__(25);
-exports.share = operators_1.share;
-//# sourceMappingURL=share.js.map
-
-/***/ }),
-
-/***/ 681:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-function __export(m) {
-    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-}
-Object.defineProperty(exports, "__esModule", { value: true });
-__export(__webpack_require__(682));
-//# sourceMappingURL=map.js.map
-
-/***/ }),
-
 /***/ 682:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
+function __export(m) {
+    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
 Object.defineProperty(exports, "__esModule", { value: true });
-var operators_1 = __webpack_require__(25);
-exports.map = operators_1.map;
-//# sourceMappingURL=map.js.map
+__export(__webpack_require__(683));
+//# sourceMappingURL=share.js.map
 
 /***/ }),
 
@@ -4059,12 +4021,10 @@ exports.map = operators_1.map;
 
 "use strict";
 
-function __export(m) {
-    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-}
 Object.defineProperty(exports, "__esModule", { value: true });
-__export(__webpack_require__(684));
-//# sourceMappingURL=merge.js.map
+var operators_1 = __webpack_require__(22);
+exports.share = operators_1.share;
+//# sourceMappingURL=share.js.map
 
 /***/ }),
 
@@ -4073,10 +4033,12 @@ __export(__webpack_require__(684));
 
 "use strict";
 
+function __export(m) {
+    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
 Object.defineProperty(exports, "__esModule", { value: true });
-var operators_1 = __webpack_require__(25);
-exports.merge = operators_1.merge;
-//# sourceMappingURL=merge.js.map
+__export(__webpack_require__(685));
+//# sourceMappingURL=map.js.map
 
 /***/ }),
 
@@ -4085,12 +4047,10 @@ exports.merge = operators_1.merge;
 
 "use strict";
 
-function __export(m) {
-    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-}
 Object.defineProperty(exports, "__esModule", { value: true });
-__export(__webpack_require__(686));
-//# sourceMappingURL=switchMap.js.map
+var operators_1 = __webpack_require__(22);
+exports.map = operators_1.map;
+//# sourceMappingURL=map.js.map
 
 /***/ }),
 
@@ -4099,10 +4059,12 @@ __export(__webpack_require__(686));
 
 "use strict";
 
+function __export(m) {
+    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
 Object.defineProperty(exports, "__esModule", { value: true });
-var operators_1 = __webpack_require__(25);
-exports.switchMap = operators_1.switchMap;
-//# sourceMappingURL=switchMap.js.map
+__export(__webpack_require__(687));
+//# sourceMappingURL=merge.js.map
 
 /***/ }),
 
@@ -4111,12 +4073,10 @@ exports.switchMap = operators_1.switchMap;
 
 "use strict";
 
-function __export(m) {
-    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-}
 Object.defineProperty(exports, "__esModule", { value: true });
-__export(__webpack_require__(688));
-//# sourceMappingURL=toArray.js.map
+var operators_1 = __webpack_require__(22);
+exports.merge = operators_1.merge;
+//# sourceMappingURL=merge.js.map
 
 /***/ }),
 
@@ -4125,10 +4085,12 @@ __export(__webpack_require__(688));
 
 "use strict";
 
+function __export(m) {
+    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
 Object.defineProperty(exports, "__esModule", { value: true });
-var operators_1 = __webpack_require__(25);
-exports.toArray = operators_1.toArray;
-//# sourceMappingURL=toArray.js.map
+__export(__webpack_require__(689));
+//# sourceMappingURL=switchMap.js.map
 
 /***/ }),
 
@@ -4137,12 +4099,10 @@ exports.toArray = operators_1.toArray;
 
 "use strict";
 
-function __export(m) {
-    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-}
 Object.defineProperty(exports, "__esModule", { value: true });
-__export(__webpack_require__(690));
-//# sourceMappingURL=take.js.map
+var operators_1 = __webpack_require__(22);
+exports.switchMap = operators_1.switchMap;
+//# sourceMappingURL=switchMap.js.map
 
 /***/ }),
 
@@ -4151,23 +4111,63 @@ __export(__webpack_require__(690));
 
 "use strict";
 
+function __export(m) {
+    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
 Object.defineProperty(exports, "__esModule", { value: true });
-var operators_1 = __webpack_require__(25);
+__export(__webpack_require__(691));
+//# sourceMappingURL=toArray.js.map
+
+/***/ }),
+
+/***/ 691:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var operators_1 = __webpack_require__(22);
+exports.toArray = operators_1.toArray;
+//# sourceMappingURL=toArray.js.map
+
+/***/ }),
+
+/***/ 692:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+function __export(m) {
+    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
+Object.defineProperty(exports, "__esModule", { value: true });
+__export(__webpack_require__(693));
+//# sourceMappingURL=take.js.map
+
+/***/ }),
+
+/***/ 693:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var operators_1 = __webpack_require__(22);
 exports.take = operators_1.take;
 //# sourceMappingURL=take.js.map
 
 /***/ }),
 
-/***/ 789:
+/***/ 792:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Settings; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_fire_auth__ = __webpack_require__(71);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_fire_auth__ = __webpack_require__(70);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_fire_database__ = __webpack_require__(53);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_firebase_app__ = __webpack_require__(435);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_firebase_app__ = __webpack_require__(437);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_firebase_app___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_firebase_app__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -4336,7 +4336,7 @@ var Settings = /** @class */ (function () {
     };
     Settings = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: "page-settings",template:/*ion-inline-start:"E:\Nova pasta\Archive-bkp-300121-mod-a\src\pages\settings\settings.html"*/'<ion-header class="ion-no-border">\n    <ion-toolbar>\n        <ion-buttons left>\n            <button color="light" ion-button menuToggle>\n                <ion-icon name="menu"></ion-icon>\n            </button>\n        </ion-buttons>\n        <ion-title class="title">\n            Configurações\n        </ion-title>\n        <ion-buttons end>\n\n        </ion-buttons>\n    </ion-toolbar>\n</ion-header>\n\n<ion-content>\n\n    <ion-grid>\n\n        <div class="login">\n            <ion-row>\n                <img class="img" [src]="url">\n                <br>\n            </ion-row>\n            <!--<ion-row>\n                <input type="file" name="file" id="file" class="inputfile" (change)="readUrl($event)">\n                <label for="file" class="upload">\n                    <ion-icon ios="ios-cloud-upload" md="md-cloud-upload"></ion-icon>\n                </label>\n            </ion-row>-->\n            <br>\n            <p class="name">{{user.name}}</p>\n        </div>\n\n        <ion-row>\n\n            <ion-col col-1>\n\n            </ion-col>\n\n            <ion-col col-10>\n\n                <form (ngSubmit)="onSubmit(f)" #f="ngForm">\n                    \n                    <ion-list>\n                        <ion-item *ngIf="user.notification == true">\n                            <ion-label primary>Notificações</ion-label>\n                            <ion-toggle primary checked="true" name="name" id="name" [(ngModel)]="user.notification">\n                            </ion-toggle>\n\n                        </ion-item>\n                        <ion-item *ngIf="user.notification == false">\n                            <ion-label primary>Notificações</ion-label>\n                            <ion-toggle primary checked="false" name="name" id="name" [(ngModel)]="user.notification">\n                            </ion-toggle>\n\n                        </ion-item>\n                        <ion-item>\n                            <ion-label>Nome</ion-label>\n                            <ion-input type="text" name="name" id="name" placeholder="Nome" [(ngModel)]="user.name"\n                                required>\n                            </ion-input>\n                        </ion-item>\n                        <ion-item>\n                            <ion-label>E-mail</ion-label>\n                            <ion-input type="email" name="email" id="email" placeholder="E-mail"\n                                [(ngModel)]="user.email" readonly></ion-input>\n                        </ion-item>\n                        <ion-item>\n                            <ion-label>Celular</ion-label>\n                            <ion-input type="text" name="mobileNo" id="mobileNo" placeholder="Celular"\n                                [(ngModel)]="user.mobileNo" required></ion-input>\n                        </ion-item>\n                    </ion-list>\n                    <ion-row>\n                        <ion-col col-12>\n                            <div align="center">\n                                <button ion-button round type="submit" [disabled]="!f.valid" small>\n                                    Salvar Dados\n                                </button>\n                            </div>\n                        </ion-col>\n                    </ion-row>\n                </form>\n\n            </ion-col>\n\n            <ion-col col-1>\n\n            </ion-col>\n\n        </ion-row>\n\n    </ion-grid>\n\n</ion-content>\n\n<ion-footer class="ion-no-border">\n    <ion-toolbar>\n        <p style="font-size: 12px; text-align: center;" ion-text color="light">\n            Super Horti Comércio de Verduras e Legumes LTDA</p>\n    </ion-toolbar>\n</ion-footer>'/*ion-inline-end:"E:\Nova pasta\Archive-bkp-300121-mod-a\src\pages\settings\settings.html"*/
+            selector: "page-settings",template:/*ion-inline-start:"/Users/Shared/projects/super-horti-app/src/pages/settings/settings.html"*/'<ion-header class="ion-no-border">\n    <ion-toolbar>\n        <ion-buttons left>\n            <button color="light" ion-button menuToggle>\n                <ion-icon name="menu"></ion-icon>\n            </button>\n        </ion-buttons>\n        <ion-title class="title">\n            Configurações\n        </ion-title>\n        <ion-buttons end>\n\n        </ion-buttons>\n    </ion-toolbar>\n</ion-header>\n\n<ion-content>\n\n    <ion-grid>\n\n        <div class="login">\n            <ion-row>\n                <img class="img" [src]="url">\n                <br>\n            </ion-row>\n            <!--<ion-row>\n                <input type="file" name="file" id="file" class="inputfile" (change)="readUrl($event)">\n                <label for="file" class="upload">\n                    <ion-icon ios="ios-cloud-upload" md="md-cloud-upload"></ion-icon>\n                </label>\n            </ion-row>-->\n            <br>\n            <p class="name">{{user.name}}</p>\n        </div>\n\n        <ion-row>\n\n            <ion-col col-1>\n\n            </ion-col>\n\n            <ion-col col-10>\n\n                <form (ngSubmit)="onSubmit(f)" #f="ngForm">\n                    \n                    <ion-list>\n                        <ion-item *ngIf="user.notification == true">\n                            <ion-label primary>Notificações</ion-label>\n                            <ion-toggle primary checked="true" name="name" id="name" [(ngModel)]="user.notification">\n                            </ion-toggle>\n\n                        </ion-item>\n                        <ion-item *ngIf="user.notification == false">\n                            <ion-label primary>Notificações</ion-label>\n                            <ion-toggle primary checked="false" name="name" id="name" [(ngModel)]="user.notification">\n                            </ion-toggle>\n\n                        </ion-item>\n                        <ion-item>\n                            <ion-label>Nome</ion-label>\n                            <ion-input type="text" name="name" id="name" placeholder="Nome" [(ngModel)]="user.name"\n                                required>\n                            </ion-input>\n                        </ion-item>\n                        <ion-item>\n                            <ion-label>E-mail</ion-label>\n                            <ion-input type="email" name="email" id="email" placeholder="E-mail"\n                                [(ngModel)]="user.email" readonly></ion-input>\n                        </ion-item>\n                        <ion-item>\n                            <ion-label>Celular</ion-label>\n                            <ion-input type="text" name="mobileNo" id="mobileNo" placeholder="Celular"\n                                [(ngModel)]="user.mobileNo" required></ion-input>\n                        </ion-item>\n                    </ion-list>\n                    <ion-row>\n                        <ion-col col-12>\n                            <div align="center">\n                                <button ion-button round type="submit" [disabled]="!f.valid" small>\n                                    Salvar Dados\n                                </button>\n                            </div>\n                        </ion-col>\n                    </ion-row>\n                </form>\n\n            </ion-col>\n\n            <ion-col col-1>\n\n            </ion-col>\n\n        </ion-row>\n\n    </ion-grid>\n\n</ion-content>\n\n<ion-footer class="ion-no-border">\n    <ion-toolbar>\n        <p style="font-size: 12px; text-align: center;" ion-text color="light">\n            Super Horti Comércio de Verduras e Legumes LTDA</p>\n    </ion-toolbar>\n</ion-footer>'/*ion-inline-end:"/Users/Shared/projects/super-horti-app/src/pages/settings/settings.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__angular_fire_auth__["a" /* AngularFireAuth */],
             __WEBPACK_IMPORTED_MODULE_3__angular_fire_database__["a" /* AngularFireDatabase */],

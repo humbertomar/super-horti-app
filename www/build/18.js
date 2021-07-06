@@ -1,14 +1,14 @@
 webpackJsonp([18],{
 
-/***/ 660:
+/***/ 663:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Exemplo3PageModule", function() { return Exemplo3PageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__exemplo3__ = __webpack_require__(771);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__exemplo3__ = __webpack_require__(774);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -38,13 +38,13 @@ var Exemplo3PageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 771:
+/***/ 774:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Exemplo3Page; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(25);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -114,7 +114,7 @@ var Exemplo3Page = /** @class */ (function () {
     ], Exemplo3Page.prototype, "mapRef", void 0);
     Exemplo3Page = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-exemplo3',template:/*ion-inline-start:"E:\Nova pasta\Archive-bkp-300121-mod-a\src\pages\exemplo3\exemplo3.html"*/'<ion-header class="ion-no-border">\n  <ion-toolbar>\n    <ion-buttons left>\n      <button color="light" ion-button menuToggle>\n        <ion-icon name="menu"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title class="title">\n      SH Delivery\n    </ion-title>\n    <!--<ion-buttons end>\n      <button color="light" ion-button icon-only color="royal" (click)="navcart()" class="header-btn-cart">\n        <ion-icon name="cart"></ion-icon>\n        <ion-badge class="carts" item-right color="danger">{{noOfItems}}</ion-badge>\n      </button>\n    </ion-buttons>-->\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n\n  <div #map id="my-map"></div>\n\n</ion-content>\n\n<ion-footer class="ion-no-border">\n  <ion-toolbar>\n    <p style="font-size: 12px; text-align: center;" ion-text color="light">\n      Super Horti Comércio de Verduras e Legumes LTDA</p>\n  </ion-toolbar>\n</ion-footer>'/*ion-inline-end:"E:\Nova pasta\Archive-bkp-300121-mod-a\src\pages\exemplo3\exemplo3.html"*/,
+            selector: 'page-exemplo3',template:/*ion-inline-start:"/Users/Shared/projects/super-horti-app/src/pages/exemplo3/exemplo3.html"*/'<ion-header class="ion-no-border">\n  <ion-toolbar>\n    <ion-buttons left>\n      <button color="light" ion-button menuToggle>\n        <ion-icon name="menu"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title class="title">\n      SH Delivery\n    </ion-title>\n    <!--<ion-buttons end>\n      <button color="light" ion-button icon-only color="royal" (click)="navcart()" class="header-btn-cart">\n        <ion-icon name="cart"></ion-icon>\n        <ion-badge class="carts" item-right color="danger">{{noOfItems}}</ion-badge>\n      </button>\n    </ion-buttons>-->\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n\n  <div #map id="my-map"></div>\n\n</ion-content>\n\n<ion-footer class="ion-no-border">\n  <ion-toolbar>\n    <p style="font-size: 12px; text-align: center;" ion-text color="light">\n      Super Horti Comércio de Verduras e Legumes LTDA</p>\n  </ion-toolbar>\n</ion-footer>'/*ion-inline-end:"/Users/Shared/projects/super-horti-app/src/pages/exemplo3/exemplo3.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavController"],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavParams"]])

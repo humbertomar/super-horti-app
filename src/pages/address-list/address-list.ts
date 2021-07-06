@@ -99,10 +99,10 @@ export class AddressListPage {
 
     if (this.af.auth.currentUser) {
       this.db
-        .list("/users/" + this.af.auth.currentUser.uid + "/address").snapshotChanges().pipe(map(changes => changes.map(c => ({ $key: c.payload.key, ...c.payload.val() }))
+        .list("/users/" + this.af.auth.currentUser.uid + "/address").snapshotChanges().pipe(map(changes => changes.map(c => ({ $key: c.payload.key, ...c.payload.val() as {} }))
         )).subscribe((res: any) => {
           //console.log(res.length);
-          if (res.length == 0) {
+          if (res.length == 0) { 
             //console.log("Nada");
             let profileModal = this.modalCtrl.create(AddEnderecoPage);
             profileModal.present();
