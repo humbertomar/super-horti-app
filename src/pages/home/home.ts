@@ -137,7 +137,7 @@ export class HomePage {
     if (localStorage.getItem("uid")) {
 
       this.db
-        .list("/users/" + localStorage.getItem("uid") + "/address").snapshotChanges().pipe(map(changes => changes.map(c => ({ $key: c.payload.key, ...c.payload.val() }))
+        .list("/users/" + localStorage.getItem("uid") + "/address").snapshotChanges().pipe(map(changes => changes.map(c => ({ $key: c.payload.key, ...c.payload.val() as {} }))
         )).subscribe((res: any) => {
           //console.log(res.length);
           //console.log(res);

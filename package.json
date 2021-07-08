@@ -74,6 +74,7 @@
   },
   "devDependencies": {
     "@ionic/app-scripts": "^3.2.3",
+    "cordova-ios-plugin-no-export-compliance": "0.0.6",
     "cordova-plugin-ionic-keyboard": "^2.2.0",
     "typescript": "^3.0.0"
   },
@@ -114,7 +115,8 @@
       "cordova.plugins.diagnostic": {
         "ANDROID_SUPPORT_VERSION": "28.+"
       },
-      "cordova-plugin-splashscreen": {}
+      "cordova-plugin-splashscreen": {},
+      "cordova-ios-plugin-no-export-compliance": {}
     }
   }
 }

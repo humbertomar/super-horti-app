@@ -106,7 +106,7 @@ export class LoginPage {
   getAddressUser(uid) {
 
     this.db
-      .list("/users/" + uid + "/address").snapshotChanges().pipe(map(changes => changes.map(c => ({ $key: c.payload.key, ...c.payload.val() }))
+      .list("/users/" + uid + "/address").snapshotChanges().pipe(map(changes => changes.map(c => ({ $key: c.payload.key, ...c.payload.val() as {} }))
       )).subscribe((res: any) => {
         //console.log(res.length);
         //console.log(res);          
