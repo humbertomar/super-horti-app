@@ -1,0 +1,89 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons slot="start">
+      <button ion-back-button>
+      </button>
+    </ion-buttons>
+    <ion-title>Endereço</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content class="transparent-header" >
+  <ion-row>
+    <ion-col col-10>
+      <ion-searchbar [(ngModel)]="autocomplete.input" (ionInput)="updateSearchResults()" placeholder="Pesquisar endereço">
+      </ion-searchbar>
+      
+      <ion-list [hidden]="autocompleteItems.length == 0" class="list-position">
+        <ion-item *ngFor="let item of autocompleteItems" tappable (click)="selectSearchResult(item)">
+          {{ item.description }}
+        </ion-item>
+      </ion-list>
+    </ion-col>
+    <ion-col col-2 align-self-center>
+      <button (click)="tryGeolocation()" ion-button>
+        <ion-icon name="locate"></ion-icon>
+      </button>
+    </ion-col>
+  </ion-row>
+
+
+  <div id='map'></div>
+
+  <ion-row>
+    <ion-col col-7>
+      <ion-item>
+        <ion-label color="primary" stacked>Cidade</ion-label>
+        <ion-input type="text" placeholder="Cidade" [(ngModel)]="address.cidade" disabled></ion-input>
+      </ion-item>
+    </ion-col>
+    <ion-col col-5>
+      <ion-item>
+        <ion-label color="primary" stacked>Estado</ion-label>
+        <ion-input type="text" placeholder="Estado" [(ngModel)]="address.estado" disabled></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-7>
+      <ion-item>
+        <ion-label color="primary" stacked>Bairro</ion-label>
+        <ion-input type="text" placeholder="Bairro" [(ngModel)]="address.bairro" disabled></ion-input>
+      </ion-item>
+    </ion-col>
+    <ion-col col-5>
+      <ion-item>
+        <ion-label color="primary" stacked>CEP</ion-label>
+        <ion-input type="text" placeholder="CEP" [(ngModel)]="address.cep" disabled></ion-input>
+      </ion-item>
+    </ion-col>
+    <ion-col col-7>
+      <ion-item>
+        <ion-label color="primary" stacked>Logradouro</ion-label>
+        <ion-input type="text" placeholder="Logradouro" [(ngModel)]="address.endereco" disabled></ion-input>
+      </ion-item>
+    </ion-col>
+    <ion-col size="5">
+      <ion-item>
+        <ion-label color="primary" stacked>Número</ion-label>
+        <ion-input type="text" placeholder="Número" [(ngModel)]="address.numero" autofocus></ion-input>
+      </ion-item>
+    </ion-col>
+    
+    <ion-col col-12>
+      <ion-item>
+        <ion-label color="primary" stacked>Complemento</ion-label>
+        <ion-input type="text" [(ngModel)]="address.complemento"></ion-input>
+      </ion-item>
+    </ion-col>
+   
+  </ion-row>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <button class="login-btn" (click)="cepIn(1)" type="submit" ion-button>ENVIAR</button>
+  </ion-toolbar>
+</ion-footer>

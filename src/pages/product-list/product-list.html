@@ -1,0 +1,73 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title class="title">Produtos</ion-title>
+        <ion-buttons end>
+            <button ion-button icon-only color="royal" (click)="navcart()" class="header-btn-cart">
+                <ion-icon name="cart"></ion-icon>
+                <ion-badge class="carts" item-right color="danger">{{noOfItems}}</ion-badge>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    
+    <ion-searchbar (ionInput)="getItems($event)" placeholder="Produto"></ion-searchbar>
+
+    <ion-item>
+        <ion-label>Ordenar produto por:</ion-label>
+        <ion-select [(ngModel)]="ascdesc" (ionChange)="getDataProductID(ascdesc)">
+            <ion-option value="n">Produto</ion-option>
+            <ion-option value="a">Menor Preço</ion-option>
+            <ion-option value="d">Maior Preço</ion-option>
+        </ion-select>
+    </ion-item>
+    
+    <ion-list *ngFor="let item of items ; let i=index">
+
+        <ion-item text-wrap (click)="navigate(item.id)">
+            <ion-row class="catagory">
+                <ion-col col-5>
+                    <div class="center">
+                        <img *ngIf="item.image != 'Nenhum arquivo foi selecionado.'"
+                            src='https://superhorti.com.br/appAdmin/{{item.image}}' alt={{item.name}} />
+                        <img *ngIf="item.image == 'Nenhum arquivo foi selecionado.'"
+                            src='https://superhorti.com.br/ws/assets/imgs/logo-sh.png' alt={{item.name}} />
+                    </div>
+                </ion-col>
+                <ion-col col-7>
+                    <ion-row class="left">
+                        <h1>{{item.name}}</h1>
+                    </ion-row>
+                    <ion-row class="left">
+                        <h2>{{item.description | limitPipe:150}}</h2>
+                    </ion-row>
+                    <ion-row class="left" *ngIf="item.reviews">
+                        <h3 >
+                            <rating name="rating" id="rating" [(ngModel)]="item.reviewData" readOnly="true" max="5"
+                                emptyStarIconName="star-outline" halfStarIconName="star-half" starIconName="star" nullable="false">
+                            </rating>
+                        </h3>
+                    </ion-row>
+                    <ion-row style="position: absolute;
+                            bottom: 10px;
+                            right: 10px;">
+                        <p>Preço <span class="item-price">{{item.price | currency:'BRL':true:'1.2-2'}}</span>
+                        </p>
+                    </ion-row>
+                </ion-col>
+            </ion-row>
+            <div *ngFor="let data of Cart">
+                <p ion-text color="danger" align="center" *ngIf="data.item.itemId == item.id">Este Produto já está no seu carrinho!</p>
+            </div>
+        </ion-item>
+    </ion-list>
+
+</ion-content>
+
+<ion-footer class="ion-no-border">
+    <ion-toolbar>
+        <p style="font-size: 12px; text-align: center;" ion-text color="light">
+            Super Horti Comércio de Verduras e Legumes LTDA</p>
+    </ion-toolbar>
+</ion-footer>
